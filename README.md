@@ -2,8 +2,10 @@
 
 > **Projektname:**
 > ZVIT-Project
+
 > **Teammitglieder:**
 > Tim, Kürsat, Alex, Philipp
+
 > **Status:** Idee
 
 ---
@@ -24,7 +26,7 @@
 ### 2.1 Kernidee
 
 - Was tut der Spieler die meiste Zeit?
-- Klettern
+  - Klettern
 
 ### 3.3 Accessibility / Komfort
 
@@ -37,18 +39,18 @@
 ### 4.1 Core Loop
 
 1. Spieler Spawnen entgegensetzen Seiten des zu erklimmenden Objektes
-2. Spieler interagiert mit Objekten / Hochkletterm
+2. Spieler interagiert mit Objekten / Hochklettern
 3. Spieler Gewinnt/Verliert
 4. New Game
 
 ### 4.3 Failure / Success States
 
 - Wann gewinnt der Spieler?
-- erster der Oben ist
+  - Erster der oben ist
 - Was passiert beim Fallen?
-- Da weiter machen wo man landet
+  - Da weiter machen wo man landet
 - Gibt es Checkpoints?
-- Ja
+  - Ja
 
 ---
 
@@ -57,24 +59,24 @@
 ### 5.1 Grundregeln
 
 - Was darf der Spieler jederzeit tun?
-  Klettern, Interagieren, Bewegen
+  - Klettern, Interagieren, Bewegen
 - Was darf der Spieler nicht?
-  Mitspieler interagieren - Aus der Map gehen -
+  - Mitspieler interagieren - Aus der Map gehen -
 - Gibt es Zeitdruck?
-  Modusabhängig
+  - Modus-Abhängig
 - Gibt es Ressourcenlimits?
-  Stamina
+  - Stamina
 
 ### 5.2 Interaktionsregeln
 
 - Welche Objekte sind greifbar?
-  TODO
+  - TODO
 - Welche Objekte sind nur dekorativ?
-  Hintergrund und Bäume am Berg z.b
+  - Hintergrund und Bäume am Berg z.b
 - Wie funktioniert Benutzung / Aktivierung?
-  Testen ob Collider klappt - dann festhalten (Klettern)
+  - Testen ob Collider klappt - dann festhalten (Klettern)
 - Gibt es physikbasierte Interaktion?
-- Gravitation
+  - Gravitation
 
 ### 5.3 Kampfrelevante Regeln
 
@@ -95,13 +97,13 @@ Wenn Multiplayer: Gegenseitiges Trollen der Spieler
 
 - Linker Controller: Linke Hand
 - Rechter Controller: Rechte Hand
-- Grip:
-- Trigger:
+- Grip: TODO
+- Trigger: TODO
 - Joystick: Bewegen
-- Menü-Taste:
-- Gesten:
+- Menü-Taste: TODO
+- Gesten: TODO
 
-### 6.4 Spielerwerte
+### 6.4 Spielerwerte TODO
 
 - Ausdauer:
 - Inventarslots:
@@ -123,18 +125,18 @@ Faires verteiltes Spawnen der Player auf der Map
 
 ### 8.1 Items
 
-| Name           | Definition                                                   | Interaktion                                     |
-| -------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-| Energy         | Stamina auffüllen/regeneration                               |                                                 |
-| Gravity        | Gravitation des Gegenspielers - Oder eigene                  |                                                 |
-| Biene          | Nervendes Monster das den Gegner nervt Audio und visuell nur | Kann stechen, falls weggeschubst                |
-| Stein          | Wegschubsen, falls nicht festgehalten wird                   | NOCH ANSCHAUEN WEIL MAN SIEHT SICH JA EIG NICHT |
-| Fels           | Fels von Oben wie Donkey Kong                                | NOCH ANSCHAUEN WEIL MAN SIEHT SICH JA EIG NICHT |
-| Grappling Hook | Ranziehen an Stelle                                          |                                                 |
+| Name           | Definition                                                   | Interaktion                                          |
+| -------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
+| Energy         | Stamina auffüllen/regeneration                               |                                                      |
+| Gravity        | Gravitation des Gegenspielers - Oder eigene                  |                                                      |
+| Biene          | Nervendes Monster das den Gegner nervt Audio und visuell nur | Kann stechen, falls weggeschubst                     |
+| Stein          | Wegschubsen, falls nicht festgehalten wird                   | NOCH ANSCHAUEN WEIL MAN SIEHT SICH JA EIG NICHT TODO |
+| Fels           | Fels von Oben wie Donkey Kong                                | NOCH ANSCHAUEN WEIL MAN SIEHT SICH JA EIG NICHT TODO |
+| Grappling Hook | Ranziehen an Stelle                                          |                                                      |
 
 ### 8.2 Tools
 
-- Stamina Monitor(Uhr)
+- Stamina Monitor (Uhr)
 
 ### 8.3 Verbrauchsitems
 
@@ -143,7 +145,7 @@ Faires verteiltes Spawnen der Player auf der Map
 ### 8.4 Inventarsystem
 
 - Quick Access?
-  Spezialitem
+  - Spezialitem
 
 ## 9. VR-Spezifisches Design
 
@@ -187,6 +189,8 @@ Anfangs, Für das Ready Set Go ein Monitor oder so.
 - Low Poly
 
 ### 12.3 Asset-Liste
+
+TODO
 
 LEER
 
