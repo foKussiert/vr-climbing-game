@@ -38,7 +38,7 @@
 
 ### 4.1 Core Loop
 
-1. Spieler Spawnen entgegensetzen Seiten des zu erklimmenden Objektes
+1. Spieler spawnen entgegensetzen Seiten des zu erklimmenden Objektes
 2. Spieler interagiert mit Objekten / Hochklettern
 3. Spieler Gewinnt/Verliert
 4. New Game
@@ -110,7 +110,7 @@ Wenn Multiplayer: Gegenseitiges Trollen der Spieler
 - Bewegungsgeschwindigkeit:
 - Gravitation:
 
-### 6.6 Spielerfeedback
+### 6.6 Spieler-Feedback
 
 - Soundfeedback: Schnaufen, Fallen, Landen
 - Visuelles Feedback
@@ -175,7 +175,7 @@ Faires verteiltes Spawnen der Player auf der Map
 - Seil
 - Felsen
 - Lianen
-- Kletterhacken
+- Kletterhaken
 
 ### 11.4 Story Delivery
 
