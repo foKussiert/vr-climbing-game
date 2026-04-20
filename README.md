@@ -12,7 +12,7 @@
 
 ### 1.1 Elevator Pitch
 
-ZVIT-Project ist ein kompetitives VR-Kletterspiel als 1-gegen-1-Rennen. <br>
+ZVIT-Project ist ein kompetitives VR-Kletterspiel als 1v1-Rennen. <br>
 Zwei Spieler starten auf gegenüberliegenden Seiten einer Kletterstrecke und versuchen als Erste das Ziel zu erreichen. <br>
 Zusätzlich ist ein Singleplayer-Modus mit Timer geplant.
 
@@ -40,7 +40,7 @@ Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweiche
 
 - Fokus auf direktes VR-Klettern statt klassischem Shooter-Gameplay
 - Kurze, intensive 1v1-Matches mit hoher Wiederholbarkeit
-- Skill trifft Risiko durch Physik, Stamina und Item-Einsatz
+- Skill trifft Risiko durch Physik, Ausdauer und Item-Einsatz
 
 ### 2.3 Accessibility / Komfort
 
@@ -82,7 +82,7 @@ Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweiche
 - Spieler dürfen: Klettern, bewegen, greifen, werfen, Items verwenden.
 - Spieler dürfen nicht: Aus der Map gehen, Exploits nutzen.
 - Zeitdruck: Modusabhängig (z.B. Timer im Singleplayer).
-- Ressourcenlimit: Stamina.
+- Ressourcenlimit: Ausdauer (Stamina).
 
 ### 4.2 Interaktionsregeln
 
@@ -144,7 +144,7 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 
 | Name           | Definition                                              | Interaktion                            |
 | -------------- | ------------------------------------------------------- | -------------------------------------- |
-| Energy         | Füllt Stamina auf / beschleunigt Regeneration           | Aufheben + Aktivieren                  |
+| Energy         | Füllt Ausdauer auf / beschleunigt Regeneration          | Aufheben + Aktivieren                  |
 | Gravity        | Verändert eigene oder gegnerische Gravitation           | Aktivieren mit begrenzter Dauer [TODO] |
 | Biene          | Stört Gegner akustisch und visuell                      | Kann Gegner bedrängen/stechen          |
 | Stein          | Bringt Gegner ins Fallen, falls nicht festgehalten wird | Interaktion per Greifen/Werfen [TODO]  |
@@ -320,7 +320,7 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 
 - Spielbarer 1v1-Prototyp in VR
 - Kletter-Loop mit Start, Ziel und Checkpoints
-- Funktionierende Stamina-Logik
+- Funktionierende Ausdauer-Logik
 - 2 funktionierende Items
 - Basic UI (Start, Pause, Ergebnis)
 
