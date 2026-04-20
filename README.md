@@ -1,12 +1,10 @@
 # VR Game Design Document (Unity / Team)
 
-> **Projektname:**
-> ZVIT-Project
+> **Projektname:** ZVIT-Project
 
-> **Teammitglieder:**
-> Tim, Kürsat, Alex, Philipp
+> **Teammitglieder:** Tim, Kürsat, Alex, Philipp
 
-> **Status:** Idee
+> **Status:** Idee / Pre-Production
 
 ---
 
@@ -14,217 +12,257 @@
 
 ### 1.1 Elevator Pitch
 
-**Beschreibt das Spiel in 2–4 Sätzen.**
+ZVIT-Project ist ein kompetitives VR-Kletterspiel als 1-gegen-1-Rennen. <br>
+Zwei Spieler starten auf gegenüberliegenden Seiten einer Kletterstrecke und versuchen als Erste das Ziel zu erreichen. <br>
+Zusätzlich ist ein Singleplayer-Modus mit Timer geplant.
 
-**Vorlage:**
-„Kletter Game in VR. 1 Gegen 1 gegen Mitspieler, wer als ersten am Ziel ist. | Single mit Timer“
+- Genre: Jump and Run (VR)
 
-- Genre: Jump and Run
+### 1.2 Kernfantasie
+
+- Ich bin ein schneller, taktischer VR-Kletterer.
+- Ich nutze Umgebung, Timing und Items, um den Gegner auszustechen.
+
+### 1.3 Zielplattform
+
+- VR-Headsets mit 6 Freiheitsgraden (6DoF)
+- Steuerung über VR-Controller (Hände + Joystick)
+
+---
 
 ## 2. High Concept
 
 ### 2.1 Kernidee
 
-- Was tut der Spieler die meiste Zeit?
-  - Klettern
+Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweichen und dem klugen Einsatz von Items.
 
-### 3.3 Accessibility / Komfort
+### 2.2 USPs
 
-- Teleport Movement / Smooth Locomotion?
-- Hände fürs Klettern, VR Controller Movement
-- Freiheitsgrade: 6
+- Fokus auf direktes VR-Klettern statt klassischem Shooter-Gameplay
+- Kurze, intensive 1v1-Matches mit hoher Wiederholbarkeit
+- Skill trifft Risiko durch Physik, Stamina und Item-Einsatz
 
-## 4. Core Gameplay
+### 2.3 Accessibility / Komfort
 
-### 4.1 Core Loop
-
-1. Spieler spawnen entgegensetzen Seiten des zu erklimmenden Objektes
-2. Spieler interagiert mit Objekten / Hochklettern
-3. Spieler Gewinnt/Verliert
-4. New Game
-
-### 4.3 Failure / Success States
-
-- Wann gewinnt der Spieler?
-  - Erster der oben ist
-- Was passiert beim Fallen?
-  - Da weiter machen wo man landet
-- Gibt es Checkpoints?
-  - Ja
+- Bewegungsoptionen: Smooth Locomotion (Teleport optional als Komfortmodus)
+- Komfortfeatures: Snap Turn, Vignette, einstellbare Drehgeschwindigkeit [TODO]
+- Klettern über Hände (Grip/Festhalten)
 
 ---
 
-## 5. Game Rules
+## 3. Core Gameplay
 
-### 5.1 Grundregeln
+### 3.1 Core Loop
 
-- Was darf der Spieler jederzeit tun?
-  - Klettern, Interagieren, Bewegen
-- Was darf der Spieler nicht?
-  - Mitspieler interagieren - Aus der Map gehen -
-- Gibt es Zeitdruck?
-  - Modus-Abhängig
-- Gibt es Ressourcenlimits?
-  - Stamina
+1. Spieler spawnen auf gegenüberliegenden Seiten der Strecke.
+2. Spieler klettern nach oben, interagieren mit der Umgebung und nutzen Items.
+3. Ein Spieler erreicht zuerst das Ziel und gewinnt.
+4. Ergebnisanzeige, dann Rematch oder neues Match.
 
-### 5.2 Interaktionsregeln
+### 3.2 Success / Failure States
 
-- Welche Objekte sind greifbar?
-  - TODO
-- Welche Objekte sind nur dekorativ?
-  - Hintergrund und Bäume am Berg z.b
-- Wie funktioniert Benutzung / Aktivierung?
-  - Testen ob Collider klappt - dann festhalten (Klettern)
-- Gibt es physikbasierte Interaktion?
-  - Gravitation
+- Sieg: Als erster im Ziel ankommen.
+- Niederlage: Gegner erreicht zuerst das Ziel.
+- Sturzverhalten: Weiterspielen ab Landepunkt oder Checkpoint.
+- Checkpoints: Ja.
 
-### 5.3 Kampfrelevante Regeln
+### 3.3 Match-Fluss
 
-Wenn Multiplayer: Gegenseitiges Trollen der Spieler
+- Lobby / Ready-Phase
+- Startsignal: "Ready - Set - Go"
+- Laufende Runde
+- End-Screen mit Sieger und Zeit
 
-## 6. Player
+---
 
-### 6.2 Fähigkeiten
+## 4. Game Rules
 
-- Laufen
-- Greifen
+### 4.1 Grundregeln
+
+- Spieler dürfen: Klettern, bewegen, greifen, werfen, Items verwenden.
+- Spieler dürfen nicht: Aus der Map gehen, Exploits nutzen.
+- Zeitdruck: Modusabhängig (z.B. Timer im Singleplayer).
+- Ressourcenlimit: Stamina.
+
+### 4.2 Interaktionsregeln
+
+- Greifbare Objekte: Kletterkanten, Seile, Lianen, Kletterhaken, Kisten [TODO].
+- Dekorative Objekte: Hintergrund, entfernte Berge/Bäume, nicht markierte Props.
+- Aktivierung: Collider + Grip bzw. Trigger.
+- Physik: Gravitation ist aktiv, Objekte können bewegt/geworfen werden.
+
+### 4.3 PvP-Regeln
+
+- Indirektes Stören über Items und Umgebungsinteraktionen ist erlaubt.
+- Direkter Nahkampf ist aktuell nicht vorgesehen.
+
+---
+
+## 5. Player
+
+### 5.1 Fähigkeiten
+
+- Laufen / Locomotion
+- Greifen / Festhalten
 - Werfen
 - Klettern
-- Spezialfähigkeit
-- Inventar für Spezialfähigkeit
+- Spezialfähigkeit über Item
 
-### 6.3 Eingaben / Controls
+### 5.2 Eingaben / Controls
 
-- Linker Controller: Linke Hand
-- Rechter Controller: Rechte Hand
-- Grip: TODO
-- Trigger: TODO
-- Joystick: Bewegen
-- Menü-Taste: TODO
-- Gesten: TODO
+- Linker Controller: linke Hand
+- Rechter Controller: rechte Hand
+- Grip: Greifen/Festhalten [TODO]
+- Trigger: Nutzen/Werfen [TODO]
+- Joystick: Bewegung
+- Menü-Taste: Pause / Einstellungen [TODO]
+- Gesten: optional [TODO]
 
-### 6.4 Spielerwerte TODO
+### 5.3 Spielerwerte
 
-- Ausdauer:
-- Inventarslots:
-- Bewegungsgeschwindigkeit:
-- Gravitation:
+- Ausdauer (Stamina): [TODO]
+- Inventarslots: [TODO]
+- Bewegungsgeschwindigkeit: [TODO]
+- Gravitationseinfluss: [TODO]
 
-### 6.6 Spieler-Feedback
+### 5.4 Spieler-Feedback
 
-- Soundfeedback: Schnaufen, Fallen, Landen
-- Visuelles Feedback
-- UI-Feedback: Item,Stamina
-- Controller-Vibration bei Treffern von Gegner - Items
+- Audio: Schnaufen, Fallen, Landen, Treffer
+- Visuell: Treffer-Feedback, Stamina-Status, Fortschritt zum Ziel
+- UI: Item-Slot + Stamina-Anzeige
+- Haptik: Controller-Vibration bei relevanten Aktionen
+
+### 5.5 Spawn-Logik
+
+Faire, symmetrische Spawnpositionen für beide Spieler.
 
 ---
 
-### 6.7 Spawn-Logik
+## 6. Items und Inventar
 
-Faires verteiltes Spawnen der Player auf der Map
+### 6.1 Item-Liste
 
-### 8.1 Items
+| Name           | Definition                                              | Interaktion                            |
+| -------------- | ------------------------------------------------------- | -------------------------------------- |
+| Energy         | Füllt Stamina auf / beschleunigt Regeneration           | Aufheben + Aktivieren                  |
+| Gravity        | Verändert eigene oder gegnerische Gravitation           | Aktivieren mit begrenzter Dauer [TODO] |
+| Biene          | Stört Gegner akustisch und visuell                      | Kann Gegner bedrängen/stechen          |
+| Stein          | Bringt Gegner ins Fallen, falls nicht festgehalten wird | Interaktion per Greifen/Werfen [TODO]  |
+| Fels           | Fels von oben (Donkey-Kong-ähnlich)                     | Event-/Triggerbasiert [TODO]           |
+| Grappling Hook | Zieht Spieler an einen Zielpunkt                        | Zielen + Auslösen                      |
 
-| Name           | Definition                                                   | Interaktion                                          |
-| -------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
-| Energy         | Stamina auffüllen/regeneration                               |                                                      |
-| Gravity        | Gravitation des Gegenspielers - Oder eigene                  |                                                      |
-| Biene          | Nervendes Monster das den Gegner nervt Audio und visuell nur | Kann stechen, falls weggeschubst                     |
-| Stein          | Wegschubsen, falls nicht festgehalten wird                   | NOCH ANSCHAUEN WEIL MAN SIEHT SICH JA EIG NICHT TODO |
-| Fels           | Fels von Oben wie Donkey Kong                                | NOCH ANSCHAUEN WEIL MAN SIEHT SICH JA EIG NICHT TODO |
-| Grappling Hook | Ranziehen an Stelle                                          |                                                      |
+### 6.2 Tools
 
-### 8.2 Tools
+- Stamina-Monitor (z.B. Uhr/HUD)
 
-- Stamina Monitor (Uhr)
+### 6.3 Verbrauchsitems
 
-### 8.3 Verbrauchsitems
+- Spezialitem pro Runde oder Pickup-basiert [TODO]
 
-- Spezialitem
+### 6.4 Inventarsystem
 
-### 8.4 Inventarsystem
+- Quick Access für aktives Spezialitem
+- Kleine Slot-Anzahl für VR-Übersichtlichkeit
 
-- Quick Access?
-  - Spezialitem
+---
 
-## 9. VR-Spezifisches Design
+## 7. VR-spezifisches Design
 
-### 9.3 Interaktionen
+### 7.1 Interaktionen
 
 - Direct Grab
 - Two-Handed Handling
 - Physikobjekte
 
-### 9.4 Immersion
+### 7.2 Immersion
 
-- Räumlicher Sound
-- Handpräsenz
+- Räumlicher Sound (3D-Audio)
+- Glaubwürdige Handpräsenz
+- Klare visuelle Rückmeldungen bei Interaktion
 
-## 10. Level / World Design
+---
 
-### 10.1 Weltstruktur
+## 8. Level / World Design
 
-- Linear
+### 8.1 Weltstruktur
 
-### 10.4 Interaktive Umgebung
+- Grundsätzlich linearer Aufstieg
+- Optionale Mikro-Routen für Risiko/Belohnung
+
+### 8.2 Interaktive Umgebung
 
 - Kisten
-- Baum
-- Felsvorsprung
+- Bäume
+- Felsvorsprünge
 - Spalten
-- Seil
+- Seile
 - Felsen
 - Lianen
 - Kletterhaken
 
-### 11.4 Story Delivery
+### 8.3 Story Delivery
 
-Anfangs, Für das Ready Set Go ein Monitor oder so.
+- Leichter Einstieg über Start-Ansage oder Monitor ("Ready - Set - Go")
 
-## 12. Art Direction
+---
 
-### 12.1 Stil
+## 9. Art Direction
+
+### 9.1 Stil
 
 - Nature
 - Low Poly
 
-### 12.3 Asset-Liste
+### 9.2 Asset-Liste
 
-TODO
+- [TODO] Kletter-Assets
+- [TODO] Umwelt-Props
+- [TODO] UI-Elemente
 
-LEER
+---
 
-## 13. Audio Design
+## 10. Audio Design
 
-### 13.1 Sound-Kategorien
+### 10.1 Sound-Kategorien
 
 - Interaktionssounds
-- Waffen / Treffer
-- Gegnergeräusche
+- Treffer-/Impactsounds
+- Gegnergeräusche / Störsounds
 - Ambient Sounds
 - Musik
 
-### 13.2 Audio-Ziele
+### 10.2 Audio-Ziele
 
-- Welche Sounds erhöhen Immersion?
-- Gibt es 3D-Audio-Prioritäten?
+- Mehr Immersion durch klare Raumwahrnehmung
+- Relevante Gameplay-Events müssen eindeutig hörbar sein
+- 3D-Audio-Priorisierung für wichtige Quellen
 
-### 13.3 Musik
+### 10.3 Musik
 
-Chillig
+- Ruhiger/chilliger Grundton
+- Dynamik in spannenden Match-Phasen [TODO]
 
-### 14.2 Menüs
+---
+
+## 11. UI / UX
+
+### 11.1 Menüs
 
 - Main Menu
 - Pause Menu
 - Settings
 
-### 14.3 UX-Prinzipien
+### 11.2 UX-Prinzipien
 
 - Große Buttons
-- Feedback bei jeder Interaktion
+- Sofortiges Feedback auf jede Interaktion
+- Gute Lesbarkeit und Kontrast in VR
 
-### 15.4 Kernsysteme
+---
+
+## 12. Technik
+
+### 12.1 Kernsysteme
 
 - Player Controller
 - Interaction System
@@ -232,25 +270,23 @@ Chillig
 - Audio Manager
 - Scene Management
 
-## 16. Multiplayer
+### 12.2 Multiplayer
 
-### 16.1 Modus
+- Modus: Multiplayer
+- Spieleranzahl: Min 2 / Max 2
 
-- Multiplayer
+### 12.3 Technische Fragen
 
-### 16.2 Spieleranzahl
+- Host/Client oder Dedicated Server?
+- Welche Objekte müssen synchronisiert werden?
+- Ownership-Regeln für Items/Interaktionen?
+- Welche Elemente sind besonders latenzkritisch?
 
-- Min:2
-- Max:2
+---
 
-### 16.4 Technische Fragen
+## 13. Entwicklungsphasen
 
-- Host / Client oder Dedicated Server?
-- Synchronisierte Objekte:
-- Ownership:
-- Latenzkritische Elemente:
-
-### Phase 1: Erst festhalten - Siehe dieses Dokument oben
+### Phase 1: Vision fixieren
 
 - Vision
 - Zielplattform
@@ -260,20 +296,42 @@ Chillig
 - Game Rules
 - MVP
 
-### Phase 2: Dann prototypen
+### Phase 2: Prototyp bauen
 
 - VR Movement
 - Greifen / Interaktion
-- 1 Gegner
+- 1 Gegner oder Störelement
 - 1 Waffen- oder Tool-System
 - 1 Testarena
 
-### Phase 3: Erst danach erweitern
+### Phase 3: Erweitern und polieren
 
 - Story
-- UI Polish
+- UI-Polish
 - Zusätzliche Gegner
 - Zusätzliche Level
 - Effekte / Audio / Balancing
 
 ---
+
+## 14. MVP Scope
+
+### Must-have
+
+- Spielbarer 1v1-Prototyp in VR
+- Kletter-Loop mit Start, Ziel und Checkpoints
+- Funktionierende Stamina-Logik
+- 2 funktionierende Items
+- Basic UI (Start, Pause, Ergebnis)
+
+### Should-have
+
+- Singleplayer-Timer-Modus
+- Drittes Item zur Gegnerstörung
+- Verbesserte Audio-Hinweise
+
+### Won't-have (im MVP)
+
+- Große Story-Kampagne
+- Mehrere komplett unterschiedliche Maps
+- Komplexe Progression/Crafting-Systeme
