@@ -58,7 +58,6 @@ public class Climbing : MonoBehaviour
     {
         Vector3 handDelta = rightHand.position - lastRightHandPosition;
 
-        // Hand nach unten = Körper nach oben
         Vector3 playerMove = -handDelta * climbSpeedMultiplier;
 
         if (characterController != null)

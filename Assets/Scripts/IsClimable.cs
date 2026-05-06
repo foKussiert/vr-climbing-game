@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class IsClimable : MonoBehaviour
 {
-    public ClimbSkirpt climbScript;
+    public Climbing climbScript;
 
     private void OnTriggerEnter(Collider other)
     {
