@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>VR Projekt Präsentation</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
+
+  <style>
+    .reveal .slide-background {
+      background-image: radial-gradient(circle, #1a1a2e 0%, #000000 100%);
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+      color: #00f2fe;
+      text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+    }
+    .highlight-text {
+      color: #4facfe;
+      font-weight: bold;
+    }
+    .vr-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+      gap: 20px;
+    }
+    .flex-item {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 10px;
+    }
+    .placeholder-box {
+      border: 2px dashed rgba(0, 242, 254, 0.5);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px 20px;
+      color: #888;
+    }
+    /* table styling für bessere lesbarkeit */
+    .reveal table {
+      width: 100%;
+      font-size: 0.9em;
+    }
+    .reveal th {
+      color: #00f2fe;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Intro -->
+      <section>
+        <div class="vr-icon">🧗‍♂️</div>
+        <h1>ZVIT-Project</h1>
+        <h3>VR-Klettern Time-Attack</h3>
+        <p><small>Team: Tim, Kürsat, Alex, Philipp</small></p>
+        <aside class="notes">
+          max 10 min zeit! kurz und knackig vorstellen. wir fokussieren uns zu 100% auf ein geiles, polish-intensives core-movement.
+        </aside>
+      </section>
+
+      <!-- Thema & Zielgruppe -->
+      <section>
+        <h2>Thema & Nutzergruppe</h2>
+        <ul>
+          <li class="fragment"><strong>Das Konzept:</strong> Jump & Run in VR trifft auf Klettern gegen die Uhr.</li>
+          <li class="fragment"><strong>Zielplattform:</strong> VR-Headsets mit 3DoF.</li>
+          <li class="fragment"><strong>Die Spieler:</strong> Fans von Movement-Games und Speedruns. Fokus auf Perfektion und Flow statt auf standard Aiming.</li>
+        </ul>
+      </section>
+
+      <!-- Vorgehen & Konzept -->
+      <section>
+        <h2>Konzept & Vorgehen</h2>
+        <p>Entwicklung basiert auf unseren Kern-Features:</p>
+        <div class="flex-container">
+          <div class="flex-item">
+            <h4>Core Loop</h4>
+            <p style="font-size: 0.8em;">Klettern, Stamina managen, perfekten Flow finden.</p>
+          </div>
+          <div class="flex-item">
+            <h4>Hindernisse</h4>
+            <p style="font-size: 0.8em;">Umweltgefahren (Felsen, Bienen) ausweichen & Tools nutzen.</p>
+          </div>
+          <div class="flex-item">
+            <h4>Motivation</h4>
+            <p style="font-size: 0.8em;">Gegen die eigene Bestzeit antreten.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- App Logik / User Flow -->
+      <section>
+        <h2>User Flow & App-Logik</h2>
+        <ol>
+          <li class="fragment"><strong>Menü:</strong> Level-Auswahl & Bestzeiten-Check</li>
+          <li class="fragment"><strong>Start:</strong> Timer-Countdown "Ready - Set - Go"</li>
+          <li class="fragment"><strong>Run:</strong> Klettern, Routenwahl & Tool-Einsatz</li>
+          <li class="fragment"><strong>Resolution:</strong> Ziel erreicht ➔ End-Screen (Neue Bestzeit?) ➔ Retry</li>
+        </ol>
+        <aside class="notes">
+          hier zeigt ihr, wie der spieler in diesen "nur noch einen run"-loop gezogen wird. restart muss instant gehen.
+        </aside>
+      </section>
+
+      <!-- Demo / Video -->
+      <section>
+        <h2>Applikations-Demo</h2>
+        <div class="placeholder-box" style="height: 300px; display: flex; align-items: center; justify-content: center;">
+          <h3>[Hier Video oder GIF vom aktuellen Build einbinden]</h3>
+        </div>
+        <p><small>Live-Einblick in die VR-Bewegungssteuerung</small></p>
+        <aside class="notes">
+          wenn ihr kein video habt, nehmt ein aussagekräftiges gif auf, wie jemand in unity greift oder klettert.
+        </aside>
+      </section>
+
+      <!-- Zeitplanung Teil 1 -->
+      <section>
+        <h2>Zeitplanung (1/2)</h2>
+        <p>Phase 1 & 2: Die Basis</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Meilenstein</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Vision, GDD, Kern-Features fixieren</td>
+              <td style="color: #4CAF50;">Erledigt</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Prototyp (Movement, Greifen, Hindernisse)</td>
+              <td style="color: #FFC107;">Aktuell</td>
+            </tr>
+          </tbody>
+        </table>
+        <aside class="notes">
+          roadmap slide 1: hier kurz erwähnen, dass die basis steht und der prototyp grade gebaut wird.
+        </aside>
+      </section>
+
+      <!-- Zeitplanung Teil 2 -->
+      <section>
+        <h2>Zeitplanung (2/2)</h2>
+        <p>Phase 3 & 4: Der Feinschliff</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Meilenstein</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3</td>
+              <td>Level-Design, Flow & Timer-System</td>
+              <td style="color: #F44336;">Geplant</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Polish, Audio, Balancing & Abgabe</td>
+              <td style="color: #F44336;">Geplant</td>
+            </tr>
+          </tbody>
+        </table>
+        <aside class="notes">
+          roadmap slide 2: der blick in die zukunft. ihr könnt den status anpassen, je nachdem wie weit ihr seid.
+        </aside>
+      </section>
+
+      <!-- Input gesucht -->
+      <section>
+        <h2 style="color: #ff4081;">Wir brauchen euer Feedback!</h2>
+        <p>Offene konzeptionelle Fragen:</p>
+        <ul>
+          <li class="fragment"><strong>Replayability:</strong> Ist ein reiner Highscore-Timer auf dauer motivierend genug?</li>
+          <li class="fragment"><strong>Rundendauer:</strong> Wie lang sollte eine perfekte Kletter-Runde sein, damit sie motiviert, aber in VR nicht zu anstrengend wird?</li>
+          <li class="fragment"><strong>Frust vs. Skill:</strong> Stürze = Instant Restart oder Checkpoint-System mit Zeitstrafe?</li>
+        </ul>
+        <aside class="notes">
+          hier das publikum einbinden. vor allem rundendauer in vr ist ein geiles thema, weil leuten schnell schlecht wird oder die arme schwer werden.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'convex',
+      plugins: [ RevealNotes ]
+    });
+  </script>
+</body>
+</html>
