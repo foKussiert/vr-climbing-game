@@ -25,7 +25,7 @@ Zusätzlich ist ein Singleplayer-Modus mit Timer geplant.
 
 ### 1.3 Zielplattform
 
-- VR-Headsets mit 6 Freiheitsgraden (6DoF)
+- VR-Headsets mit 3 Freiheitsgraden (3DoF)
 - Steuerung über VR-Controller (Hände + Joystick)
 
 ---
