@@ -58,15 +58,28 @@ public class Climbing : MonoBehaviour
     {
         Vector3 handDelta = rightHand.position - lastRightHandPosition;
 
+        Vector3 handVelocity = handDelta / Time.deltaTime;
+
         Vector3 playerMove = -handDelta * climbSpeedMultiplier;
+
+        float boost = 0f;
+
+        if (handVelocity.y < -1.0f)
+        {
+            boost = Mathf.Abs(handVelocity.y) * 0.12f;
+        }
+
+        boost = Mathf.Clamp(boost, 0f, 1.5f);
+
+        Vector3 finalMove = playerMove + Vector3.up * boost;
 
         if (characterController != null)
         {
-            characterController.Move(playerMove);
+            characterController.Move(finalMove);
         }
         else
         {
-            xrOrigin.position += playerMove;
+            xrOrigin.position += finalMove;
         }
 
         lastRightHandPosition = rightHand.position;
