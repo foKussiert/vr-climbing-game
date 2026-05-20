@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public float timer;
     public bool running;
+
+    public TextMeshProUGUI timerText;
 
     void Awake()
     {
@@ -22,6 +25,12 @@ public class GameManager : MonoBehaviour
         if (!running) return;
 
         timer += Time.deltaTime;
+
+        int minutes = Mathf.FloorToInt(timer / 60f);
+        int seconds = Mathf.FloorToInt(timer % 60f);
+        int milliseconds = Mathf.FloorToInt((timer * 100f) % 100f);
+
+        timerText.text = $"{minutes:00}:{seconds:00}:{milliseconds:00}";
     }
 
     public void StartRun()
