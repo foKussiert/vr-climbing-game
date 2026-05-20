@@ -17,7 +17,7 @@ public class FinishDetection : MonoBehaviour
         }
     }
 
-    private IEnumerator LoadLevel(String sceneName)
+    private IEnumerator LoadLevel(string sceneName)
     {
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         while (!op.isDone)

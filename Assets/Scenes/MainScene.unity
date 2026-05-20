@@ -2649,7 +2649,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3152,3 +3152,4 @@ SceneRoots:
   - {fileID: 1661652494}
   - {fileID: 598061219}
   - {fileID: 828542965}
+  - {fileID: 336945214}
