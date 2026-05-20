@@ -2,28 +2,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class MainMenuManager : MonoBehaviour 
+public class MainMenuManager : MonoBehaviour
 {
-    public GameObject startMenuCanvas;
-    public GameObject loadingScreenCanvas;
-
-    public void StartGame(string sceneName) 
+    public void StartGame(string sceneName)
     {
-        StartCoroutine(LoadLevelRoutine(sceneName)); 
+        StartCoroutine(LoadLevelRoutine(sceneName));
     }
 
-    public void QuitGame() 
+    public void QuitGame()
     {
         Application.Quit();
     }
 
-    private IEnumerator LoadLevelRoutine(string sceneName) 
+    private IEnumerator LoadLevelRoutine(string sceneName)
     {
-        startMenuCanvas.SetActive(false);
-        loadingScreenCanvas.SetActive(true);
-
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
-        while (!op.isDone) 
+        while (!op.isDone)
         {
             yield return null;
         }
