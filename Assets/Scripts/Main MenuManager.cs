@@ -7,10 +7,9 @@ public class MainMenuManager : MonoBehaviour
     public GameObject startMenuCanvas;
     public GameObject loadingScreenCanvas;
 
-    public void StartGame() 
+    public void StartGame(string sceneName) 
     {
-        // 1 ist hier der index deiner Game_Scene in den Build Settings
-        StartCoroutine(LoadLevelRoutine(1)); 
+        StartCoroutine(LoadLevelRoutine(sceneName)); 
     }
 
     public void QuitGame() 
@@ -18,13 +17,12 @@ public class MainMenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    private IEnumerator LoadLevelRoutine(int sceneIndex) 
+    private IEnumerator LoadLevelRoutine(string sceneName) 
     {
         startMenuCanvas.SetActive(false);
-        loadingScreenCanvas.SetActive(true); // Das schwebende Loading-Schild zeigen
+        loadingScreenCanvas.SetActive(true);
 
-        // Asynchrones Laden der Game_Scene
-        AsyncOperation op = SceneManager.LoadSceneAsync(sceneIndex);
+        AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
         while (!op.isDone) 
         {
             yield return null;
