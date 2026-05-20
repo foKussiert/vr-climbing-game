@@ -3591,26 +3591,13 @@ GameObject:
   - component: {fileID: 1321054025}
   - component: {fileID: 1321054024}
   - component: {fileID: 1321054023}
-  - component: {fileID: 1321054022}
   m_Layer: 0
   m_Name: wall_horizontal
-  m_TagString: Climbable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1321054022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321054021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c90d3b99fc2d3bcbb32b47efae2f413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1321054023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4915,26 +4902,13 @@ GameObject:
   - component: {fileID: 1887987316}
   - component: {fileID: 1887987315}
   - component: {fileID: 1887987314}
-  - component: {fileID: 1887987313}
   m_Layer: 0
   m_Name: wall_vertical
-  m_TagString: Climbable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1887987313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887987312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c90d3b99fc2d3bcbb32b47efae2f413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1887987314
 BoxCollider:
   m_ObjectHideFlags: 0
