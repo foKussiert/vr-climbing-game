@@ -12,16 +12,15 @@
 
 ### 1.1 Elevator Pitch
 
-ZVIT-Project ist ein kompetitives VR-Kletterspiel als 1v1-Rennen. <br>
-Zwei Spieler starten auf gegenüberliegenden Seiten einer Kletterstrecke und versuchen als Erste das Ziel zu erreichen. <br>
-Zusätzlich ist ein Singleplayer-Modus mit Timer geplant.
+ZVIT-Project ist ein VR-Kletterspiel im Singleplayer-Timer-Modus. <br>
+Der Spieler startet eine Kletterstrecke und versucht, die Strecke in möglichst kurzer Zeit zu absolvieren.
 
 - Genre: Jump and Run (VR)
 
 ### 1.2 Kernfantasie
 
 - Ich bin ein schneller, taktischer VR-Kletterer.
-- Ich nutze Umgebung, Timing und Items, um den Gegner auszustechen.
+- Ich nutze Umgebung, Timing und Items, um meine Zeit zu verbessern.
 
 ### 1.3 Zielplattform
 
@@ -39,7 +38,7 @@ Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweiche
 ### 2.2 USPs
 
 - Fokus auf direktes VR-Klettern statt klassischem Shooter-Gameplay
-- Kurze, intensive 1v1-Matches mit hoher Wiederholbarkeit
+- Kurze, intensive Runs mit hoher Wiederholbarkeit
 - Skill trifft Risiko durch Physik, Ausdauer und Item-Einsatz
 
 ### 2.3 Accessibility / Komfort
@@ -54,24 +53,23 @@ Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweiche
 
 ### 3.1 Core Loop
 
-1. Spieler spawnen auf gegenüberliegenden Seiten der Strecke.
-2. Spieler klettern nach oben, interagieren mit der Umgebung und nutzen Items.
-3. Ein Spieler erreicht zuerst das Ziel und gewinnt.
-4. Ergebnisanzeige, dann Rematch oder neues Match.
+1. Spieler spawnt am Startpunkt der Strecke.
+2. Der Spieler klettert nach oben, interagiert mit der Umgebung und nutzt Items.
+3. Ziel ist es, die Strecke in möglichst kurzer Zeit zu absolvieren (Timer).
+4. Ergebnisanzeige mit Zeit, dann Neustart oder neues Level.
 
 ### 3.2 Success / Failure States
 
-- Sieg: Als erster im Ziel ankommen.
-- Niederlage: Gegner erreicht zuerst das Ziel.
+- Erfolg: Level abgeschlossen / Bestzeit verbessert.
+- Misserfolg: Sturz oder Zeitverlust, Weiterspielen ab Checkpoint.
 - Sturzverhalten: Weiterspielen ab Landepunkt oder Checkpoint.
 - Checkpoints: Ja.
 
 ### 3.3 Match-Fluss
 
-- Lobby / Ready-Phase
-- Startsignal: "Ready - Set - Go"
-- Laufende Runde
-- End-Screen mit Sieger und Zeit
+- Ready-Phase / Start
+- Laufende Runde (Einzelspieler, Timer läuft)
+- End-Screen mit Bestzeit und Timer-Statistiken
 
 ---
 
@@ -91,10 +89,9 @@ Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweiche
 - Aktivierung: Collider + Grip bzw. Trigger.
 - Physik: Gravitation ist aktiv, Objekte können bewegt/geworfen werden.
 
-### 4.3 PvP-Regeln
+### 4.3 Interaktionen
 
-- Indirektes Stören über Items und Umgebungsinteraktionen ist erlaubt.
-- Direkter Nahkampf ist aktuell nicht vorgesehen.
+- Interaktionen beziehen sich auf die Umwelt und das eigene Movement; das Design fokussiert Singleplayer-Spielabläufe.
 
 ---
 
@@ -134,7 +131,7 @@ Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweiche
 
 ### 5.5 Spawn-Logik
 
-Faire, symmetrische Spawnpositionen für beide Spieler.
+- Startposition und Checkpoint-Placement für den Spieler.
 
 ---
 
@@ -142,14 +139,14 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 
 ### 6.1 Item-Liste
 
-| Name           | Definition                                              | Interaktion                            |
-| -------------- | ------------------------------------------------------- | -------------------------------------- |
-| Energy         | Füllt Ausdauer auf / beschleunigt Regeneration          | Aufheben + Aktivieren                  |
-| Gravity        | Verändert eigene oder gegnerische Gravitation           | Aktivieren mit begrenzter Dauer [TODO] |
-| Biene          | Stört Gegner akustisch und visuell                      | Kann Gegner bedrängen/stechen          |
-| Stein          | Bringt Gegner ins Fallen, falls nicht festgehalten wird | Interaktion per Greifen/Werfen [TODO]  |
-| Fels           | Fels von oben (Donkey-Kong-ähnlich)                     | Event-/Triggerbasiert [TODO]           |
-| Grappling Hook | Zieht Spieler an einen Zielpunkt                        | Zielen + Auslösen                      |
+| Name           | Definition                                                | Interaktion                            |
+| -------------- | --------------------------------------------------------- | -------------------------------------- |
+| Energy         | Füllt Ausdauer auf / beschleunigt Regeneration            | Aufheben + Aktivieren                  |
+| Gravity        | Verändert temporär die Gravitation (z. B. langsamer Fall) | Aktivieren mit begrenzter Dauer [TODO] |
+| Biene          | Erzeugt lokale Ablenkung/Partikeleffekt                   | Aufheben + Aktivieren                  |
+| Stein          | Fügt dem Level physikalische Hindernisse hinzu            | Interaktion per Greifen/Werfen [TODO]  |
+| Fels           | Fels von oben (Donkey-Kong-ähnlich)                       | Event-/Triggerbasiert [TODO]           |
+| Grappling Hook | Zieht Spieler an einen Zielpunkt                          | Zielen + Auslösen                      |
 
 ### 6.2 Tools
 
@@ -227,7 +224,7 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 
 - Interaktionssounds
 - Treffer-/Impactsounds
-- Gegnergeräusche / Störsounds
+- Interaktionssounds / Störsounds
 - Ambient Sounds
 - Musik
 
@@ -270,17 +267,16 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 - Audio Manager
 - Scene Management
 
-### 12.2 Multiplayer
+### 12.2 Singleplayer
 
-- Modus: Multiplayer
-- Spieleranzahl: Min 2 / Max 2
+- Modus: Singleplayer (Timer-Modus)
+- Spieleranzahl: 1
 
 ### 12.3 Technische Fragen
 
-- Host/Client oder Dedicated Server?
-- Welche Objekte müssen synchronisiert werden?
-- Ownership-Regeln für Items/Interaktionen?
-- Welche Elemente sind besonders latenzkritisch?
+- Benötigen wir Netzwerkcode? Nein, Fokus auf lokalem Singleplayer.
+- Welche Objekte müssen persistent gespeichert werden (Bestzeiten, Einstellungen)?
+- Ownership-Regeln entfallen, da keine netzwerkbasierten Interaktionen geplant sind.
 
 ---
 
@@ -292,7 +288,6 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 - Zielplattform
 - Core Loop
 - Player
-- Enemy
 - Game Rules
 - MVP
 
@@ -300,15 +295,14 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 
 - VR Movement
 - Greifen / Interaktion
-- 1 Gegner oder Störelement
-- 1 Waffen- oder Tool-System
+- Timer-basiertes Level und Checkpoints
+- 1 Toolsystem (z.B. Grappling Hook)
 - 1 Testarena
 
 ### Phase 3: Erweitern und polieren
 
 - Story
 - UI-Polish
-- Zusätzliche Gegner
 - Zusätzliche Level
 - Effekte / Audio / Balancing
 
@@ -318,16 +312,16 @@ Faire, symmetrische Spawnpositionen für beide Spieler.
 
 ### Must-have
 
-- Spielbarer 1v1-Prototyp in VR
+- Spielbarer Singleplayer-Timer-Prototyp in VR
 - Kletter-Loop mit Start, Ziel und Checkpoints
 - Funktionierende Ausdauer-Logik
 - 2 funktionierende Items
-- Basic UI (Start, Pause, Ergebnis)
+- Basic UI (Start, Pause, Ergebnis, Bestzeiten-Anzeige)
 
 ### Should-have
 
 - Singleplayer-Timer-Modus
-- Drittes Item zur Gegnerstörung
+- Drittes Item zur zusätzlichen Herausforderung
 - Verbesserte Audio-Hinweise
 
 ### Won't-have (im MVP)
