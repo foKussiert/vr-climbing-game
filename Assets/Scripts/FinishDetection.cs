@@ -12,6 +12,7 @@ public class FinishDetection : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            GameManager.Instance.StopRun();
             triggered = true;
             StartCoroutine(LoadLevel("MainScene")); // TODO: change hard coded value
         }
