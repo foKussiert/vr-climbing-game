@@ -24,6 +24,13 @@ public class Climbing : MonoBehaviour
     private InputDevice leftHandDevice;
     private InputDevice rightHandDevice;
 
+    private float verticalVelocity = 0f;
+
+    private float leftBuffer;
+    private float rightBuffer;
+
+    public float bufferTime = 0.1f;
+
     void Start()
     {
         leftHandDevice  = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
@@ -42,8 +49,21 @@ public class Climbing : MonoBehaviour
         leftHandDevice.TryGetFeatureValue(CommonUsages.gripButton,  out leftGrip);
         rightHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out rightGrip);
 
-        bool leftActive  = leftHandCanClimb  && leftGrip;
-        bool rightActive = rightHandCanClimb && rightGrip;
+        bool leftValid = leftHandCanClimb && leftGrip;
+        bool rightValid = rightHandCanClimb && rightGrip;
+
+        if (leftValid)
+            leftBuffer = bufferTime;
+        else
+            leftBuffer -= Time.deltaTime;
+
+        if (rightValid)
+            rightBuffer = bufferTime;
+        else
+            rightBuffer -= Time.deltaTime;
+
+        bool leftActive = leftBuffer > 0;
+        bool rightActive = rightBuffer > 0;
 
         if (leftActive  && !leftGripping)  lastLeftHandPosition  = leftHand.position;
         if (rightActive && !rightGripping) lastRightHandPosition = rightHand.position;
@@ -51,8 +71,33 @@ public class Climbing : MonoBehaviour
         leftGripping  = leftActive;
         rightGripping = rightActive;
 
-        if (leftGripping || rightGripping)
+        if (leftActive || rightActive)
+        {
+            verticalVelocity = 0f;
             ApplyClimbMovement();
+        }
+        else if (characterController != null)
+        {
+            if (characterController.isGrounded)
+                verticalVelocity = 0f;
+            else
+                verticalVelocity += Physics.gravity.y * Time.deltaTime;
+
+            Vector3 move = Vector3.zero;
+
+            if (leftActive || rightActive)
+            {
+                verticalVelocity = 0f;
+                ApplyClimbMovement();
+            }
+            else
+            {
+                verticalVelocity += Physics.gravity.y * Time.deltaTime;
+                move.y = verticalVelocity * Time.deltaTime;
+            }
+
+            characterController.Move(move);
+        }
     }
 
     void ApplyClimbMovement()
