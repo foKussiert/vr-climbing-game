@@ -32,7 +32,6 @@ public class Climbing : MonoBehaviour
 
     void Update()
     {
-        // Device-Reconnect
         if (!leftHandDevice.isValid)
             leftHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
         if (!rightHandDevice.isValid)
@@ -46,7 +45,6 @@ public class Climbing : MonoBehaviour
         bool leftActive  = leftHandCanClimb  && leftGrip;
         bool rightActive = rightHandCanClimb && rightGrip;
 
-        // Tracking starten wenn Grip neu gedrückt
         if (leftActive  && !leftGripping)  lastLeftHandPosition  = leftHand.position;
         if (rightActive && !rightGripping) lastRightHandPosition = rightHand.position;
 
@@ -73,25 +71,14 @@ public class Climbing : MonoBehaviour
             activeCount++;
         }
 
-        // Durchschnitt beider Hände → fühlt sich natürlicher an
         Vector3 handDelta = totalDelta / activeCount;
-        Vector3 handVelocity = handDelta / Time.deltaTime;
-
         Vector3 playerMove = -handDelta * climbSpeedMultiplier;
 
-        // Boost beim schnellen Runterziehen (Hochklettern)
-        float boost = 0f;
-        if (handVelocity.y < -1.0f)
-            boost = Mathf.Clamp(Mathf.Abs(handVelocity.y) * 0.12f, 0f, 1.5f);
-
-        Vector3 finalMove = playerMove + Vector3.up * boost;
-
         if (characterController != null)
-            characterController.Move(finalMove);
+            characterController.Move(playerMove);
         else
-            xrOrigin.position += finalMove;
+            xrOrigin.position += playerMove;
 
-        // Positionen updaten
         if (leftGripping)  lastLeftHandPosition  = leftHand.position;
         if (rightGripping) lastRightHandPosition = rightHand.position;
     }
