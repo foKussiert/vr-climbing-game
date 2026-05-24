@@ -5,6 +5,7 @@ using System.Collections;
 public class FinishDetection : MonoBehaviour
 {
     private bool triggered = false;
+    public string nextSceneName = "MainScene"; // TODO: change hard coded value
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,7 +15,7 @@ public class FinishDetection : MonoBehaviour
         {
             GameManager.Instance.StopRun();
             triggered = true;
-            StartCoroutine(LoadLevel("MainScene")); // TODO: change hard coded value
+            StartCoroutine(LoadLevel(nextSceneName));
         }
     }
 
