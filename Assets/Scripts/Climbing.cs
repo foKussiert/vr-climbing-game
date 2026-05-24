@@ -5,98 +5,106 @@ public class Climbing : MonoBehaviour
 {
     [Header("References")]
     public Transform xrOrigin;
+    public Transform leftHand;
     public Transform rightHand;
     public CharacterController characterController;
 
     [Header("Settings")]
     public float climbSpeedMultiplier = 1.0f;
 
+    private bool leftHandCanClimb;
     private bool rightHandCanClimb;
-    private bool isClimbing;
 
+    private bool leftGripping;
+    private bool rightGripping;
+
+    private Vector3 lastLeftHandPosition;
     private Vector3 lastRightHandPosition;
+
+    private InputDevice leftHandDevice;
     private InputDevice rightHandDevice;
 
     void Start()
     {
+        leftHandDevice  = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
         rightHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
     }
 
     void Update()
     {
+        // Device-Reconnect
+        if (!leftHandDevice.isValid)
+            leftHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
         if (!rightHandDevice.isValid)
-        {
             rightHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
-        }
 
-        bool gripPressed = false;
-        rightHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out gripPressed);
+        bool leftGrip  = false;
+        bool rightGrip = false;
+        leftHandDevice.TryGetFeatureValue(CommonUsages.gripButton,  out leftGrip);
+        rightHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out rightGrip);
 
-        if (rightHandCanClimb && gripPressed && !isClimbing)
-        {
-            StartClimb();
-        }
+        bool leftActive  = leftHandCanClimb  && leftGrip;
+        bool rightActive = rightHandCanClimb && rightGrip;
 
-        if (isClimbing && gripPressed)
-        {
-            ContinueClimb();
-        }
+        // Tracking starten wenn Grip neu gedrückt
+        if (leftActive  && !leftGripping)  lastLeftHandPosition  = leftHand.position;
+        if (rightActive && !rightGripping) lastRightHandPosition = rightHand.position;
 
-        if (isClimbing && !gripPressed)
-        {
-            StopClimb();
-        }
+        leftGripping  = leftActive;
+        rightGripping = rightActive;
+
+        if (leftGripping || rightGripping)
+            ApplyClimbMovement();
     }
 
-    void StartClimb()
+    void ApplyClimbMovement()
     {
-        isClimbing = true;
-        lastRightHandPosition = rightHand.position;
-    }
+        Vector3 totalDelta = Vector3.zero;
+        int activeCount = 0;
 
-    void ContinueClimb()
-    {
-        Vector3 handDelta = rightHand.position - lastRightHandPosition;
+        if (leftGripping)
+        {
+            totalDelta += leftHand.position - lastLeftHandPosition;
+            activeCount++;
+        }
+        if (rightGripping)
+        {
+            totalDelta += rightHand.position - lastRightHandPosition;
+            activeCount++;
+        }
 
+        // Durchschnitt beider Hände → fühlt sich natürlicher an
+        Vector3 handDelta = totalDelta / activeCount;
         Vector3 handVelocity = handDelta / Time.deltaTime;
 
         Vector3 playerMove = -handDelta * climbSpeedMultiplier;
 
+        // Boost beim schnellen Runterziehen (Hochklettern)
         float boost = 0f;
-
         if (handVelocity.y < -1.0f)
-        {
-            boost = Mathf.Abs(handVelocity.y) * 0.12f;
-        }
-
-        boost = Mathf.Clamp(boost, 0f, 1.5f);
+            boost = Mathf.Clamp(Mathf.Abs(handVelocity.y) * 0.12f, 0f, 1.5f);
 
         Vector3 finalMove = playerMove + Vector3.up * boost;
 
         if (characterController != null)
-        {
             characterController.Move(finalMove);
-        }
         else
-        {
             xrOrigin.position += finalMove;
-        }
 
-        lastRightHandPosition = rightHand.position;
+        // Positionen updaten
+        if (leftGripping)  lastLeftHandPosition  = leftHand.position;
+        if (rightGripping) lastRightHandPosition = rightHand.position;
     }
 
-    void StopClimb()
+    public void SetLeftHandCanClimb(bool value)
     {
-        isClimbing = false;
+        leftHandCanClimb = value;
+        if (!value) leftGripping = false;
     }
 
     public void SetRightHandCanClimb(bool value)
     {
         rightHandCanClimb = value;
-
-        if (!value)
-        {
-            isClimbing = false;
-        }
+        if (!value) rightGripping = false;
     }
 }
