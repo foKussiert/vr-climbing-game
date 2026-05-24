@@ -813,6 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c90d3b99fc2d3bcbb32b47efae2f413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: MainMenu_Scene
 --- !u!65 &620861410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -828,7 +829,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2392,6 +2393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   climbScript: {fileID: 1662886383}
+  hand: 0
 --- !u!1001 &913531443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3291,6 +3293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   climbScript: {fileID: 1662886383}
+  hand: 1
 --- !u!1 &1020088218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2105398146700539429, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
@@ -4334,6 +4337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xrOrigin: {fileID: 1662886382}
+  leftHand: {fileID: 913211940}
   rightHand: {fileID: 968430718}
   characterController: {fileID: 0}
   climbSpeedMultiplier: 1
@@ -5259,7 +5263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
