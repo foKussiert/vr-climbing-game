@@ -24,9 +24,11 @@ public class Climbing : MonoBehaviour
     private InputDevice leftHandDevice;
     private InputDevice rightHandDevice;
 
+    private float verticalVelocity;
+
     void Start()
     {
-        leftHandDevice  = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
+        leftHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
         rightHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
     }
 
@@ -37,22 +39,31 @@ public class Climbing : MonoBehaviour
         if (!rightHandDevice.isValid)
             rightHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
 
-        bool leftGrip  = false;
-        bool rightGrip = false;
-        leftHandDevice.TryGetFeatureValue(CommonUsages.gripButton,  out leftGrip);
-        rightHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out rightGrip);
+        leftHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool leftGrip);
+        rightHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool rightGrip);
 
-        bool leftActive  = leftHandCanClimb  && leftGrip;
+        bool leftActive = leftHandCanClimb && leftGrip;
         bool rightActive = rightHandCanClimb && rightGrip;
 
-        if (leftActive  && !leftGripping)  lastLeftHandPosition  = leftHand.position;
+        if (leftActive && !leftGripping) lastLeftHandPosition = leftHand.position;
         if (rightActive && !rightGripping) lastRightHandPosition = rightHand.position;
 
-        leftGripping  = leftActive;
+        leftGripping = leftActive;
         rightGripping = rightActive;
 
-        if (leftGripping || rightGripping)
+        if (leftActive || rightActive)
+        {
+            verticalVelocity = 0f;
             ApplyClimbMovement();
+        }
+        else
+        {
+            verticalVelocity = characterController.isGrounded
+                ? 0f
+                : verticalVelocity + Physics.gravity.y * Time.deltaTime;
+
+            characterController.Move(new Vector3(0f, verticalVelocity * Time.deltaTime, 0f));
+        }
     }
 
     void ApplyClimbMovement()
@@ -71,15 +82,9 @@ public class Climbing : MonoBehaviour
             activeCount++;
         }
 
-        Vector3 handDelta = totalDelta / activeCount;
-        Vector3 playerMove = -handDelta * climbSpeedMultiplier;
+        characterController.Move(-(totalDelta / activeCount) * climbSpeedMultiplier);
 
-        if (characterController != null)
-            characterController.Move(playerMove);
-        else
-            xrOrigin.position += playerMove;
-
-        if (leftGripping)  lastLeftHandPosition  = leftHand.position;
+        if (leftGripping) lastLeftHandPosition = leftHand.position;
         if (rightGripping) lastRightHandPosition = rightHand.position;
     }
 

@@ -35,15 +35,14 @@ public class GameManager : MonoBehaviour
 
     public void StartRun()
     {
-        Debug.Log("RUN STARTED");
-
+        // Debug.Log("RUN STARTED");
         timer = 0f;
         running = true;
     }
 
     public void StopRun()
     {
-        Debug.Log("RUN STOPPED: " + timer);
+        // Debug.Log("RUN STOPPED: " + timer);
         running = false;
     }
 }
