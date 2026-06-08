@@ -11,7 +11,6 @@ public class Climbing : MonoBehaviour
 
     [Header("Settings")]
     public float climbSpeedMultiplier = 1.0f;
-    public float bufferTime = 0.1f;
 
     private bool leftHandCanClimb;
     private bool rightHandCanClimb;
@@ -26,9 +25,6 @@ public class Climbing : MonoBehaviour
     private InputDevice rightHandDevice;
 
     private float verticalVelocity;
-
-    private float leftBuffer;
-    private float rightBuffer;
 
     void Start()
     {
@@ -46,16 +42,11 @@ public class Climbing : MonoBehaviour
         leftHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool leftGrip);
         rightHandDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool rightGrip);
 
-        leftBuffer = (leftHandCanClimb && leftGrip) ? bufferTime : leftBuffer - Time.deltaTime;
-        rightBuffer = (rightHandCanClimb && rightGrip) ? bufferTime : rightBuffer - Time.deltaTime;
+        bool leftActive = leftHandCanClimb && leftGrip;
+        bool rightActive = rightHandCanClimb && rightGrip;
 
-        bool leftActive = leftBuffer > 0f;
-        bool rightActive = rightBuffer > 0f;
-
-        if (leftActive && !leftGripping)
-            lastLeftHandPosition = leftHand.position;
-        if (rightActive && !rightGripping)
-            lastRightHandPosition = rightHand.position;
+        if (leftActive && !leftGripping) lastLeftHandPosition = leftHand.position;
+        if (rightActive && !rightGripping) lastRightHandPosition = rightHand.position;
 
         leftGripping = leftActive;
         rightGripping = rightActive;
@@ -67,7 +58,10 @@ public class Climbing : MonoBehaviour
         }
         else
         {
-            verticalVelocity = characterController.isGrounded ? 0f : verticalVelocity + Physics.gravity.y * Time.deltaTime;
+            verticalVelocity = characterController.isGrounded
+                ? 0f
+                : verticalVelocity + Physics.gravity.y * Time.deltaTime;
+
             characterController.Move(new Vector3(0f, verticalVelocity * Time.deltaTime, 0f));
         }
     }
