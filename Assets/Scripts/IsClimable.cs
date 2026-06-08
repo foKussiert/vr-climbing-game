@@ -3,6 +3,7 @@ using UnityEngine;
 public class IsClimable : MonoBehaviour
 {
     public Climbing climbScript;
+    public HandVisibility handVisibility;
     public enum Hand { Left, Right }
     public Hand hand;
 
@@ -14,6 +15,8 @@ public class IsClimable : MonoBehaviour
                 climbScript.SetLeftHandCanClimb(true);
             else
                 climbScript.SetRightHandCanClimb(true);
+
+            handVisibility.SetTransparent(true);
         }
     }
 
@@ -25,6 +28,8 @@ public class IsClimable : MonoBehaviour
                 climbScript.SetLeftHandCanClimb(false);
             else
                 climbScript.SetRightHandCanClimb(false);
+
+            handVisibility.SetTransparent(false);
         }
     }
 }
