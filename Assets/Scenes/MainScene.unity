@@ -1444,6 +1444,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1477,7 +1481,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1674,6 +1678,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (2)
@@ -1771,7 +1779,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2164,6 +2172,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2197,7 +2209,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3523,6 +3535,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (6)
@@ -3620,7 +3636,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5920,6 +5936,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (65)
@@ -6017,7 +6037,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6237,6 +6257,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6270,7 +6294,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6726,6 +6750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (48)
@@ -6823,7 +6851,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7901,6 +7929,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7934,7 +7966,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8761,6 +8793,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8794,7 +8830,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9430,6 +9466,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9463,7 +9503,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9795,6 +9835,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9828,7 +9872,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10038,6 +10082,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10071,7 +10119,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10983,6 +11031,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11016,7 +11068,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11030,6 +11082,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (11)
@@ -11127,7 +11183,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11471,6 +11527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (6)
@@ -11568,7 +11628,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11778,6 +11838,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11811,7 +11875,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11899,6 +11963,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11932,7 +12000,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12668,6 +12736,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12701,7 +12773,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13621,6 +13693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (81)
@@ -13718,7 +13794,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13848,6 +13924,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (55)
@@ -13945,7 +14025,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -14023,6 +14103,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14056,7 +14140,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16018,6 +16102,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16051,7 +16139,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16377,6 +16465,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16410,7 +16502,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16676,6 +16768,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16709,7 +16805,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16967,6 +17063,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17000,7 +17100,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -17560,6 +17660,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17593,7 +17697,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19056,6 +19160,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (80)
@@ -19153,7 +19261,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -20747,6 +20855,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20780,7 +20892,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -21114,6 +21226,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (10)
@@ -21211,7 +21327,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -21225,6 +21341,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (85)
@@ -21322,7 +21442,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -22959,6 +23079,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22992,7 +23116,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -23197,6 +23321,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23230,7 +23358,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -25288,6 +25416,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25321,7 +25453,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -25829,6 +25961,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (90)
@@ -25926,7 +26062,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -26977,6 +27113,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (49)
@@ -27074,7 +27214,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -28176,6 +28316,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (11)
@@ -28273,7 +28417,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -30294,6 +30438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (94)
@@ -30391,7 +30539,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -31495,6 +31643,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31528,7 +31680,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -32403,6 +32555,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (52)
@@ -32500,7 +32656,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -32877,6 +33033,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (27)
@@ -32974,7 +33134,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -32993,6 +33153,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (83)
@@ -33090,7 +33254,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -33872,6 +34036,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (10)
@@ -33969,7 +34137,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35012,6 +35180,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35045,7 +35217,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35163,6 +35335,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (43)
@@ -35260,7 +35436,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35274,6 +35450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (19)
@@ -35371,7 +35551,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35510,6 +35690,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35543,7 +35727,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -36737,6 +36921,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (73)
@@ -36834,7 +37022,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -37500,6 +37688,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (46)
@@ -37597,7 +37789,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -38128,6 +38320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (70)
@@ -38225,7 +38421,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -38737,6 +38933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (38)
@@ -38834,7 +39034,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -39316,6 +39516,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39349,7 +39553,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -39439,6 +39643,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (11)
@@ -39536,7 +39744,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -40108,6 +40316,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40141,7 +40353,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -40625,6 +40837,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (15)
@@ -40722,7 +40938,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -41620,6 +41836,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (35)
@@ -41717,7 +41937,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -44120,6 +44340,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (74)
@@ -44217,7 +44441,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -44549,6 +44773,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44582,7 +44810,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -46133,6 +46361,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46166,7 +46398,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -46627,6 +46859,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (71)
@@ -46724,7 +46960,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -46799,6 +47035,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (59)
@@ -46896,7 +47136,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -47756,6 +47996,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (47)
@@ -47853,7 +48097,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -48731,6 +48975,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (86)
@@ -48828,7 +49076,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -48946,6 +49194,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (42)
@@ -49043,7 +49295,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -49545,6 +49797,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49578,7 +49834,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -50254,6 +50510,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (5)
@@ -50351,7 +50611,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -50548,6 +50808,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (34)
@@ -50645,7 +50909,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -51063,6 +51327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (10)
@@ -51160,7 +51428,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -51419,7 +51687,7 @@ GameObject:
   - component: {fileID: 608375626}
   m_Layer: 0
   m_Name: rocks
-  m_TagString: Untagged
+  m_TagString: Climbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53527,6 +53795,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53560,7 +53832,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -53589,6 +53861,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (4)
@@ -53686,7 +53962,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -55546,6 +55822,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (36)
@@ -55643,7 +55923,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -55787,6 +56067,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55820,7 +56104,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -55898,6 +56182,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55931,7 +56219,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -57288,6 +57576,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (77)
@@ -57385,7 +57677,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -57590,6 +57882,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57623,7 +57919,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -58132,6 +58428,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (64)
@@ -58229,7 +58529,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -58558,6 +58858,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (79)
@@ -58655,7 +58959,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -59585,6 +59889,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (84)
@@ -59682,7 +59990,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -59933,6 +60241,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (76)
@@ -60030,7 +60342,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -62468,6 +62780,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (50)
@@ -62565,7 +62881,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -62945,6 +63261,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62978,7 +63298,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -66470,6 +66790,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (58)
@@ -66567,7 +66891,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -68871,6 +69195,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68904,7 +69232,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -69218,6 +69546,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69251,7 +69583,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -72369,6 +72701,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -72402,7 +72738,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -73516,6 +73852,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (22)
@@ -73613,7 +73953,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -74006,6 +74346,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74039,7 +74383,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -74476,6 +74820,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (9)
@@ -74573,7 +74921,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -75176,11 +75524,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1640641961789276243, guid: 8c5aedbedb31848488e8007c3432c990, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 32344608}
-    m_AddedComponents: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 972444319289219758, guid: 8c5aedbedb31848488e8007c3432c990, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1162522985}
   m_SourcePrefab: {fileID: 100100000, guid: 8c5aedbedb31848488e8007c3432c990, type: 3}
 --- !u!1001 &887079726
 PrefabInstance:
@@ -75408,6 +75756,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (37)
@@ -75505,7 +75857,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -76215,11 +76567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6141914067261739610, guid: d1791b6c42f7b4091950a90dbf80c441, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7539930301339783734, guid: d1791b6c42f7b4091950a90dbf80c441, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 756944756}
-    m_AddedComponents: []
+      addedObject: {fileID: 1685976860}
   m_SourcePrefab: {fileID: 100100000, guid: d1791b6c42f7b4091950a90dbf80c441, type: 3}
 --- !u!1001 &897920340
 PrefabInstance:
@@ -76666,6 +77018,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (29)
@@ -76763,7 +77119,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -76978,6 +77334,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77011,7 +77371,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -77317,6 +77677,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (45)
@@ -77414,7 +77778,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -79010,6 +79374,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (3)
@@ -79107,7 +79475,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -79479,6 +79847,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (5)
@@ -79576,7 +79948,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -80238,6 +80610,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (3)
@@ -80335,7 +80711,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -80649,6 +81025,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80682,7 +81062,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -82243,6 +82623,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (4)
@@ -82340,7 +82724,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -84596,6 +84980,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -84629,7 +85017,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -84831,6 +85219,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (12)
@@ -84928,7 +85320,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -85356,6 +85748,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (9)
@@ -85453,7 +85849,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -85919,6 +86315,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (89)
@@ -86016,7 +86416,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -86221,6 +86621,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86254,7 +86658,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -87013,6 +87417,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (32)
@@ -87110,7 +87518,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -87124,6 +87532,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (6)
@@ -87221,7 +87633,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -87235,6 +87647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (91)
@@ -87332,7 +87748,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -88352,6 +88768,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88385,7 +88805,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -88827,6 +89247,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88860,7 +89284,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -90991,6 +91415,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91024,7 +91452,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -91278,6 +91706,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (3)
@@ -91375,7 +91807,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -92518,6 +92950,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (4)
@@ -92615,7 +93051,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -92954,6 +93390,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (40)
@@ -93051,7 +93491,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -93477,6 +93917,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (41)
@@ -93574,7 +94018,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -94285,6 +94729,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (24)
@@ -94382,7 +94830,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -96316,6 +96764,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96349,7 +96801,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -96465,6 +96917,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96498,7 +96954,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -96845,6 +97301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (44)
@@ -96942,7 +97402,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -97849,6 +98309,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -97882,7 +98346,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -98547,6 +99011,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (61)
@@ -98644,7 +99112,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -99117,6 +99585,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (23)
@@ -99214,7 +99686,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -100023,6 +100495,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100056,7 +100532,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -100529,6 +101005,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100562,7 +101042,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -102112,6 +102592,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -102145,7 +102629,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -103209,6 +103693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (18)
@@ -103306,7 +103794,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -104631,6 +105119,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -104664,7 +105156,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -104869,6 +105361,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -104902,7 +105398,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -105132,6 +105628,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (75)
@@ -105229,7 +105729,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -105932,6 +106432,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -105965,7 +106469,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106109,6 +106613,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106142,7 +106650,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106466,6 +106974,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5741328530681937865, guid: cb5f541f3051f634588c090434c63ea7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106499,7 +107011,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106881,6 +107393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (92)
@@ -106978,7 +107494,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -107119,6 +107635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (69)
@@ -107216,7 +107736,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -107688,6 +108208,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (7)
@@ -107785,7 +108309,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -108932,6 +109456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (57)
@@ -109029,7 +109557,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -109183,6 +109711,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -109216,7 +109748,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -110210,6 +110742,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -110243,7 +110779,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -110267,6 +110803,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (1)
@@ -110364,7 +110904,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -110378,6 +110918,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (68)
@@ -110475,7 +111019,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -110527,6 +111071,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (53)
@@ -110624,7 +111172,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -111004,6 +111552,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (8)
@@ -111101,7 +111653,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -111191,6 +111743,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (63)
@@ -111288,7 +111844,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -113309,6 +113865,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -113342,7 +113902,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -113706,6 +114266,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (39)
@@ -113803,7 +114367,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -113817,6 +114381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (12)
@@ -113914,7 +114482,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -115153,6 +115721,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -115186,7 +115758,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -119745,6 +120317,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (60)
@@ -119842,7 +120418,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -120054,6 +120630,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (33)
@@ -120151,7 +120731,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -121280,6 +121860,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121313,7 +121897,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -121926,6 +122510,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (20)
@@ -122023,7 +122611,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -123597,6 +124185,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -123630,7 +124222,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -124449,6 +125041,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (62)
@@ -124546,7 +125142,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -124797,6 +125393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (8)
@@ -124894,7 +125494,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -125142,6 +125742,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -125175,7 +125779,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -125623,6 +126227,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -125656,7 +126264,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -126165,6 +126773,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (2)
@@ -126262,7 +126874,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -127035,6 +127647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (93)
@@ -127132,7 +127748,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -128204,6 +128820,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (78)
@@ -128301,7 +128921,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -128539,6 +129159,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (54)
@@ -128636,7 +129260,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -130418,6 +131042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (7)
@@ -130515,7 +131143,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -131609,6 +132237,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -131642,7 +132274,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -133421,6 +134053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (88)
@@ -133518,7 +134154,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -135131,6 +135767,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -135164,7 +135804,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -135375,6 +136015,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -135408,7 +136052,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -135488,6 +136132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (13)
@@ -135585,7 +136233,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -137941,6 +138589,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -137974,7 +138626,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -138379,6 +139031,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (8)
@@ -138476,7 +139132,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -138561,6 +139217,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (51)
@@ -138658,7 +139318,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -138990,6 +139650,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139023,7 +139687,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -139257,6 +139921,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139290,7 +139958,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -139695,6 +140363,7 @@ MonoBehaviour:
   rightHand: {fileID: 968430718}
   characterController: {fileID: 1662886380}
   climbSpeedMultiplier: 1
+  bufferTime: 0.1
 --- !u!4 &1663151740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8582696896278199184, guid: 8b58c85fc19f692408d19ca86492f2a4, type: 3}
@@ -140102,6 +140771,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -140135,7 +140808,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -141074,6 +141747,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -141107,7 +141784,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -142738,6 +143415,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (13)
@@ -142835,7 +143516,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -143330,6 +144011,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143363,7 +144048,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -147344,6 +148029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (82)
@@ -147441,7 +148130,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -147455,6 +148144,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (21)
@@ -147552,7 +148245,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -148142,6 +148835,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -148175,7 +148872,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -148607,6 +149304,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -148640,7 +149341,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -148977,6 +149678,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -149010,7 +149715,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -149341,6 +150046,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (16)
@@ -149438,7 +150147,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -150299,6 +151008,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (25)
@@ -150396,7 +151109,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -151149,6 +151862,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -151182,7 +151899,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -153197,6 +153914,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -153230,7 +153951,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -153529,6 +154250,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (66)
@@ -153626,7 +154351,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -153767,6 +154492,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (30)
@@ -153864,7 +154593,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -154241,6 +154970,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (28)
@@ -154338,7 +155071,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -154609,6 +155342,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -154642,7 +155379,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -155455,6 +156192,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -155488,7 +156229,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -155507,6 +156248,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (87)
@@ -155604,7 +156349,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -157181,6 +157926,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -157214,7 +157963,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -157662,6 +158411,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 1111505120495731375, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642494629529219928, guid: 6095f1f78d37bff40a0673e43395962b, type: 3}
       propertyPath: m_Name
       value: Sharp_Rock_1 (5)
@@ -157759,7 +158512,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -157837,6 +158590,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -157870,7 +158627,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -158034,6 +158791,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -158067,7 +158828,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -158597,6 +159358,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -158630,7 +159395,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -158708,6 +159473,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -158741,7 +159510,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -158864,6 +159633,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (14)
@@ -158961,7 +159734,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -161868,6 +162641,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -161901,7 +162678,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -162098,6 +162875,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (2)
@@ -162195,7 +162976,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -163087,6 +163868,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (56)
@@ -163184,7 +163969,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -163901,6 +164686,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (17)
@@ -163998,7 +164787,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -164752,6 +165541,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -164785,7 +165578,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -166295,6 +167088,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -166328,7 +167125,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -166784,6 +167581,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -166817,7 +167618,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -166895,6 +167696,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -166928,7 +167733,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -167054,7 +167859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -167971,6 +168776,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 4640663677800372584, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6975919358117926118, guid: f435329f8c4464a49bd0a405de1b6c72, type: 3}
       propertyPath: m_Name
       value: Flat_Rock_5 (9)
@@ -168068,7 +168877,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -168402,6 +169211,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (26)
@@ -168499,7 +169312,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -169143,6 +169956,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -169176,7 +169993,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -170803,6 +171620,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -170836,7 +171657,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -171074,6 +171895,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -171107,7 +171932,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -171126,6 +171951,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (7)
@@ -171223,7 +172052,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -171242,6 +172071,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (31)
@@ -171339,7 +172172,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -172014,6 +172847,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -172047,7 +172884,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -172742,6 +173579,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (72)
@@ -172839,7 +173680,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -173994,6 +174835,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -174027,7 +174872,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -174200,6 +175045,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -174233,7 +175082,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -174316,6 +175165,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -174349,7 +175202,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -174635,6 +175488,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -174668,7 +175525,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -174766,6 +175623,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -174799,7 +175660,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -175451,6 +176312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (67)
@@ -175548,7 +176413,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -176721,6 +177586,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -176754,7 +177623,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -177601,6 +178470,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6780252998507498393, guid: 33962c94205f8b0429416fc9d9bf1ecc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -177634,7 +178507,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -178029,6 +178902,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 608375626}
     m_Modifications:
+    - target: {fileID: 3813787857102417824, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5865046489294177592, guid: 168b190eba7f10342bbd52aa174c728e, type: 3}
       propertyPath: m_Name
       value: Square_Rock_23 (2)
@@ -178126,7 +179003,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
