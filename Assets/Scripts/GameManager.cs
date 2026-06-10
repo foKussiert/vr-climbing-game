@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,14 +10,25 @@ public class GameManager : MonoBehaviour
     public bool running;
 
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI countdownText;
 
     void Awake()
     {
         Instance = this;
     }
 
-    void Start()
+    IEnumerator Start()
     {
+        countdownText.text = "Ready";
+        yield return new WaitForSecondsRealtime(1f);
+
+        countdownText.text = "Set";
+        yield return new WaitForSecondsRealtime(1f);
+
+        countdownText.text = "Go!";
+        yield return new WaitForSecondsRealtime(5f);
+        countdownText.text = "";
+
         StartRun();
     }
 
