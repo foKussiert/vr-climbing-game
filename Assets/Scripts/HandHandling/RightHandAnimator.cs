@@ -4,7 +4,7 @@ public class RightHandAnimator : HandAnimator
 {
     private InputDevice device;
 
-    void Start()
+    protected override void Start()
     {
         base.Start();
         device = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);

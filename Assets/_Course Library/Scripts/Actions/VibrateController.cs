@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+#pragma warning disable CS0618
 
 /// <summary>
 /// Vibrate the XR Controller
@@ -32,3 +33,4 @@ public class VibrateController : MonoBehaviour
         controller.SendHapticImpulse(strongVibrate, duration);
     }
 }
+#pragma warning restore CS0618

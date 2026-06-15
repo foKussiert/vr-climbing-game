@@ -131,6 +131,7 @@ public class XRButton : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseI
         return buttonTransform.localPosition.y < threshold;
     }
 
+    [System.Obsolete("Overrides obsolete XRBaseInteractable API for compatibility with this package version.")]
     public override bool IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor interactor)
     {
         return false;
