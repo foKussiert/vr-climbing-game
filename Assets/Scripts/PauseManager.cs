@@ -523,7 +523,7 @@ public class PauseManager : MonoBehaviour
 
         if (HandsOverlapBlockingGeometry())
         {
-            SetHintMessage("Haende aus Wand/Felsen bewegen, um fortzusetzen.");
+            SetHintMessage("Hände aus Wand/Felsen bewegen, um fortzusetzen.");
             return;
         }
 
@@ -553,7 +553,7 @@ public class PauseManager : MonoBehaviour
 
             if (HandsOverlapBlockingGeometry())
             {
-                SetHintMessage("Haende aus Wand/Felsen bewegen, um fortzusetzen.");
+                SetHintMessage("Hände aus Wand/Felsen bewegen, um fortzusetzen.");
                 resumeCountdownRoutine = null;
                 yield break;
             }
