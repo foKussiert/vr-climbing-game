@@ -30,7 +30,7 @@ public class HandAnimator : MonoBehaviour
         fingers = new[] { thumb, indexFinger, middleFinger, ringFinger, littleFinger };
     }
 
-    protected void Start() => InitFingers();
+    protected virtual void Start() => InitFingers();
 
     [ContextMenu("Save Open Pose")]
     void SaveOpenPose()

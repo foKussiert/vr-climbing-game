@@ -1,4 +1,5 @@
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
 
 [CustomEditor(typeof(HandAnimator), true)]
@@ -19,3 +20,4 @@ public class HandAnimatorEditor : Editor
             hand.PreviewClosed();
     }
 }
+#endif
