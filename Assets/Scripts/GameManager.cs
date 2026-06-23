@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public float timer;
     public bool running;
+    public bool canClimb = false;
 
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI countdownText;
@@ -47,14 +48,13 @@ public class GameManager : MonoBehaviour
 
     public void StartRun()
     {
-        // Debug.Log("RUN STARTED");
         timer = 0f;
         running = true;
+        canClimb = true;
     }
 
     public void StopRun()
     {
-        // Debug.Log("RUN STOPPED: " + timer);
         running = false;
     }
 }

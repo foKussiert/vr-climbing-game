@@ -29068,6 +29068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   running: 0
+  canClimb: 0
   timerText: {fileID: 760655707}
   countdownText: {fileID: 1811924417}
 --- !u!4 &336945214
