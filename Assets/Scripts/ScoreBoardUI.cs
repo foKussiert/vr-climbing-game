@@ -8,15 +8,6 @@ public class ScoreboardUI : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetFloat("Score_0", 25.42f);
-        PlayerPrefs.SetFloat("Score_1", 27.81f);
-        PlayerPrefs.SetFloat("Score_2", 31.05f);
-        PlayerPrefs.SetFloat("Score_3", 35.99f);
-
-        PlayerPrefs.SetInt("ScoreCount", 4);
-
-        PlayerPrefs.Save();
-    
         List<float> scores = HighscoreManager.LoadScores();
 
         scoreText.text = "BESTZEITEN\n\n";
