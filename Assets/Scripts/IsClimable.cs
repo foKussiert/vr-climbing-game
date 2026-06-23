@@ -7,6 +7,19 @@ public class IsClimable : MonoBehaviour
     public enum Hand { Left, Right }
     public Hand hand;
 
+    private void TriggerHaptic()
+    {
+        XRNode node = hand == Hand.Left
+            ? XRNode.LeftHand
+            : XRNode.RightHand;
+
+        InputDevice device = InputDevices.GetDeviceAtXRNode(node);
+
+        if (device.isValid)
+        {
+            device.SendHapticImpulse(0, 0.7f, 0.1f);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Climbable"))
@@ -17,6 +30,7 @@ public class IsClimable : MonoBehaviour
                 climbScript.SetRightHandCanClimb(true);
 
             handVisibility.SetTransparent(true);
+            TriggerHaptic();
         }
     }
 
