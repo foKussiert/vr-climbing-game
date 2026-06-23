@@ -99,4 +99,19 @@ public class Climbing : MonoBehaviour
         rightHandCanClimb = value;
         if (!value) rightGripping = false;
     }
+    public void VibrateLeft()
+    {
+        if (leftHandDevice.isValid)
+        {
+            leftHandDevice.SendHapticImpulse(0, 0.7f, 0.1f);
+        }
+    }
+
+    public void VibrateRight()
+    {
+        if (rightHandDevice.isValid)
+        {
+            rightHandDevice.SendHapticImpulse(0, 0.7f, 0.1f);
+        }
+    }
 }
