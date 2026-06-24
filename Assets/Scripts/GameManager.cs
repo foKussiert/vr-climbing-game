@@ -20,13 +20,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Start()
     {
-        countdownText.text = "3";
+        countdownText.text = "Ready";
         yield return new WaitForSecondsRealtime(1f);
 
-        countdownText.text = "2";
-        yield return new WaitForSecondsRealtime(1f);
-
-        countdownText.text = "1";
+        countdownText.text = "Set";
         yield return new WaitForSecondsRealtime(1f);
 
         countdownText.text = "GO!";
