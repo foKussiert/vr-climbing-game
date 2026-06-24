@@ -34,6 +34,9 @@ public class Climbing : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.Instance.canClimb)
+            return;
+
         if (!leftHandDevice.isValid)
             leftHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
         if (!rightHandDevice.isValid)

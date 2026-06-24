@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,17 +8,28 @@ public class GameManager : MonoBehaviour
 
     public float timer;
     public bool running;
+    public bool canClimb = false;
 
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI countdownText;
 
     void Awake()
     {
         Instance = this;
     }
 
-    void Start()
+    IEnumerator Start()
     {
+        countdownText.text = "Ready";
+        yield return new WaitForSecondsRealtime(1f);
+
+        countdownText.text = "Set";
+        yield return new WaitForSecondsRealtime(1f);
+
+        countdownText.text = "GO!";
         StartRun();
+        yield return new WaitForSecondsRealtime(3f);
+        countdownText.text = "";
     }
 
     void Update()
@@ -35,14 +47,13 @@ public class GameManager : MonoBehaviour
 
     public void StartRun()
     {
-        // Debug.Log("RUN STARTED");
         timer = 0f;
         running = true;
+        canClimb = true;
     }
 
     public void StopRun()
     {
-        // Debug.Log("RUN STOPPED: " + timer);
         running = false;
     }
 }

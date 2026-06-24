@@ -58,10 +58,6 @@ public class HandAnimator : MonoBehaviour
 
     void Update()
     {
-
-        // bool gripping = IsGripping();
-        // Debug.Log($"IsGripping: {gripping}, gripAmount: {gripAmount}");
-
         gripAmount = Mathf.Lerp(gripAmount, IsGripping() ? 1f : 0f, Time.deltaTime * gripSpeed);
 
         foreach (var f in fingers)
