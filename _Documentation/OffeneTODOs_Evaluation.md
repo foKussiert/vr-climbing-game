@@ -12,7 +12,6 @@ Was fehlt noch?
     - Restart Button
     - QuitGame
     - Scoreboard/aktuelle Zeit
-- ? Continuous Turning zu Snap Turning
 - ? Audio
     - ? (Hintergrundmusik oder Umgebungsgeräusche (Wind, Vögel, ...))
     - ? Ready - Set - Go Sound
