@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektpräsentation | Proof by Climbing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* CORE SETUP - FULLSCREEN SLIDES */
+        * { box-sizing: border-box; }
+        body {
+            background-color: #121413;
+            margin: 0;
+            padding: 0;
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Slide Container Logic */
+        .slide-wrapper {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+        }
+
+        .slide-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #181c1a; 
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            border: 1px solid rgba(74, 222, 128, 0.1);
+            
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.98);
+            transition: all 0.4s ease-in-out;
+            z-index: 0;
+        }
+
+        .slide-container.active {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            z-index: 10;
+        }
+
+        .slide-container > * { position: relative; z-index: 1; width: 100%; }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 { font-size: 64px; color: #4ade80; line-height: 1.1; font-weight: 700; }
+        
+        .slide-title {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: left;
+            width: 100%;
+            color: #ffffff;
+            border-left: 5px solid #4ade80;
+            padding-left: 20px;
+        }
+
+        p, li, th, td { font-size: 18px; line-height: 1.6; color: #cbd5e1; }
+        .subtitle { font-size: 24px; color: #94a3b8; margin-top: 10px; }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* LAYOUTS */
+        .title-layout { text-align: center; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; align-items: start; }
+        .three-column { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; width: 100%; align-items: start; }
+        .single-column { max-width: 900px; margin: 0 auto; text-align: center; }
+        
+        .tile {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 30px;
+            flex: 1;
+            height: 100%;
+        }
+        .tile h3 { color: #86efac; font-size: 22px; margin-bottom: 15px; text-transform: none; }
+        .tile .icon { font-size: 40px; color: #4ade80; margin-bottom: 20px; }
+        
+        .tile ul { padding-left: 20px; font-size: 16px; }
+        .tile ul li { margin-bottom: 10px; font-size: 15px; }
+
+        /* Timeline Styling */
+        .timeline-layout { display: flex; justify-content: space-between; position: relative; width: 100%; padding-top: 50px; }
+        .timeline-line { position: absolute; top: 75px; left: 0; width: 100%; height: 2px; background: rgba(74, 222, 128, 0.2); }
+        .timeline-item { width: 23%; text-align: center; position: relative; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 12px;
+            background: #4ade80;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #4ade80;
+            z-index: 2;
+        }
+        .timeline-item h3 { font-size: 18px; color: #4ade80; margin-bottom: 40px; }
+        .timeline-item .status { font-size: 12px; font-weight: bold; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
+        .status-done { background: #14532d; color: #86efac; border: 1px solid #86efac; }
+        .status-doing { background: #451a03; color: #fde047; border: 1px solid #fde047; }
+
+        /* Chart Styling */
+        .chart-container { width: 100%; display: flex; flex-direction: column; gap: 15px; }
+        .bar { display: flex; align-items: center; gap: 20px; }
+        .bar .label { width: 250px; text-align: right; font-weight: 600; font-size: 16px; }
+        .bar-inner { flex-grow: 1; height: 35px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; }
+        .bar-fill { height: 100%; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; font-weight: bold; color: #000; font-size: 14px; }
+
+        /* Custom Mini-Bars for Results */
+        .result-bar-container { display: flex; flex-direction: column; gap: 5px; margin-bottom: 20px; }
+        .result-question { font-size: 14px; color: #cbd5e1; font-weight: 600; line-height: 1.3; }
+        .result-bar-bg { width: 100%; height: 24px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; position: relative; }
+        .result-bar-fill-positive { height: 100%; background: linear-gradient(90deg, #22c55e, #4ade80); display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; font-size: 12px; font-weight: bold; color: #000; }
+
+        /* Section Title Layout */
+        .section-title-layout { text-align: center; border-top: 1px solid rgba(74, 222, 128, 0.3); border-bottom: 1px solid rgba(74, 222, 128, 0.3); padding: 40px 0; width: 80%; margin: 0 auto; }
+        .section-title-layout h2 { font-size: 52px; color: #ffffff; }
+
+        /* Bleed Layout for Video Placeholder */
+        .bleed-image-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; align-items: start; height: 100%; width: 100%; }
+        .bleed-image-layout .content-container { padding: 60px; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+        .bleed-image-layout .image-container { height: 100%; background: #232a26; display: flex; align-items: center; justify-content: center; position: relative; border-left: 1px solid rgba(74, 222, 128, 0.1); }
+
+        /* Slide Counter Overlay */
+        .slide-counter {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            color: #64748b;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 100;
+        }
+
+        /* Navigation Hint */
+        .nav-hint {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            color: #64748b;
+            font-size: 14px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-hint"><i class="fa-solid fa-arrows-left-right"></i> Pfeiltasten zum Navigieren</div>
+    <div class="slide-counter" id="counter">1 / 10</div>
+
+    <div class="slide-wrapper">
+        
+        <div class="slide-container active">
+            <div class="title-layout">
+                <p class="subtitle" style="color: #86efac; font-weight: 600; text-transform: uppercase;">Abschlusspräsentation</p>
+                <h1>Proof by Climbing</h1>
+                <p class="subtitle">Immersion, Präzision und Hochgeschwindigkeit in der Vertikalen</p>
+                <div style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                    <p style="font-size: 14px; color: #64748b;">Team: Tim, Kürsat, Alex, Philipp</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="section-title-layout">
+                <h2 class="slide-title" style="border: none; text-align: center; padding: 0;">Die Vision</h2>
+                <p style="font-size: 24px; color: #4ade80;">Jump & Run trifft auf naturnahes Extrem-Klettern</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <h2 class="slide-title">Überblick & Zielgruppe</h2>
+            <div class="content-area">
+                <div class="two-column">
+                    <div class="tile">
+                        <div class="icon"><i class="fa-solid fa-mountain"></i></div>
+                        <h3>Konzept</h3>
+                        <p>"Proof by Climbing" ist ein Movement-basiertes VR-Spiel, bei dem Spieler vertikale Kletterparcours in Bestzeit bewältigen. Der absolute Fokus liegt auf dem „Flow“ – der nahtlosen Verbindung von Greifen und Klettern in einer naturnahen Umgebung.</p>
+                    </div>
+                    <div class="tile">
+                        <div class="icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Nutzergruppe</h3>
+                        <p>Primär Speedrunner, VR-Enthusiasten und kompetitive Spieler. Wir verzichten auf Standard-Mechaniken und konzentrieren uns zu 100% auf ein hochgradig poliertes Core-Movement ohne unnötige Ablenkungen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <h2 class="slide-title">Projekt-Vorgehensweise</h2>
+            <div class="content-area">
+                <div class="timeline-layout">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <span class="status status-done">Erledigt</span>
+                        <h3>Phase 1: Vision</h3>
+                        <p>Konzeption, GDD-Erstellung & Definition der Key-Features.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="status status-done">Erledigt</span>
+                        <h3>Phase 2: Prototyp</h3>
+                        <p>Implementierung des grundlegenden Movements & der Greif-Physik.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="status status-done">Erledigt</span>
+                        <h3>Phase 3: Design</h3>
+                        <p>Gestaltung der naturnahen Level-Architektur & Flow-Optimierung.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="status status-doing">Aktuell</span>
+                        <h3>Phase 4: Polish & Evaluation</h3>
+                        <p>Performance-Optimierung, Audio-Design & finale Auswertung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <h2 class="slide-title">Kern-Mechaniken & User Flow</h2>
+            <div class="content-area">
+                <div class="two-column" style="height: 100%;">
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <ul style="list-style: none; padding: 0; text-align: left;">
+                            <li style="margin-bottom: 30px;"><strong style="color: #4ade80; font-size: 24px;">1. Core Loop:</strong><br> Reduziert auf das Wesentliche: Greifen, Klettern und die schnellste Route nach oben finden. Fokus liegt rein auf dem Movement ohne künstliche Hindernisse.</li>
+                            <li style="margin-bottom: 30px;"><strong style="color: #4ade80; font-size: 24px;">2. Puristisches Klettern:</strong><br> Die Umgebung selbst ist die Herausforderung. Wir setzen auf organische Felsstrukturen statt auf inszenierte Gefahren.</li>
+                            <li style="margin-bottom: 30px;"><strong style="color: #4ade80; font-size: 24px;">3. High-Speed Loop:</strong><br> Ein Instant-Retry System sorgt für den typischen "Nur noch ein Versuch"-Sog ohne Ladezeiten.</li>
+                        </ul>
+                    </div>
+                    <div style="height: 100%; min-height: 400px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(74, 222, 128, 0.2);">
+                        <img src="Screenshot_2026-06-30_203145.png" alt="Low Poly In-Game Environment" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" style="padding: 0;">
+            <div class="bleed-image-layout">
+                <div class="content-container">
+                    <h2 class="slide-title" style="margin-bottom: 10px;">Applikations-Demo</h2>
+                    <p style="color: #4ade80; font-weight: bold; margin-bottom: 20px;">Gameplay Showcase</p>
+                    <p>In diesem finalen Gameplay-Ausschnitt zeigen wir das polierte Movement in der natürlichen Spielumgebung.</p>
+                    <ul style="margin-top: 20px;">
+                        <li>Flüssiges Hand-Tracking</li>
+                        <li>Naturnahe Texturen & Umgebung</li>
+                        <li>Nahtloser Speedrun-Flow</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <div style="text-align: center; color: #86efac;">
+                        <i class="fa-solid fa-play" style="font-size: 80px; margin-bottom: 20px;"></i>
+                        <p style="font-weight: bold;">VIDEO PLATZHALTER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <h2 class="slide-title">Evaluations-Kriterien</h2>
+            <p style="margin-bottom: 30px;">Um fundiertes Feedback zu sammeln, haben wir einen strukturierten Evaluationsbogen mit drei Hauptkategorien entwickelt:</p>
+            <div class="content-area">
+                <div class="three-column">
+                    <div class="tile">
+                        <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3>1. User Experience</h3>
+                        <ul>
+                            <li>Intuitivität der Steuerung</li>
+                            <li>Verständnis der Klettermechanik</li>
+                            <li>Motivation zur Bestzeit-Jagd</li>
+                            <li>Allgemeiner Spielspaß</li>
+                        </ul>
+                    </div>
+                    <div class="tile">
+                        <div class="icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                        <h3>2. Immersion</h3>
+                        <ul>
+                            <li>Gefühl der räumlichen Präsenz</li>
+                            <li>Eintauchen ins Spiel (Flow)</li>
+                            <li>Starkes Raum- & Höhengefühl</li>
+                            <li>Wirkung der Geschwindigkeit</li>
+                        </ul>
+                    </div>
+                    <div class="tile">
+                        <div class="icon"><i class="fa-solid fa-head-side-mask"></i></div>
+                        <h3>3. VR-Sickness & Komfort</h3>
+                        <ul>
+                            <li>Auftreten von Kopfschmerzen</li>
+                            <li>Schwindel- & Unwohlsein</li>
+                            <li>Auslösen von Höhenangst</li>
+                            <li>Bedarf an körperlichen Pausen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <h2 class="slide-title">Ergebnisse der Evaluation</h2>
+            <div class="content-area">
+                <div class="three-column">
+                    
+                    <div class="tile" style="padding: 25px;">
+                        <h3 style="color: #4ade80; border-bottom: 1px solid rgba(74, 222, 128, 0.3); padding-bottom: 10px; margin-bottom: 20px; font-size: 18px;">1. User Experience</h3>
+                        
+                        <div class="result-bar-container">
+                            <div class="result-question">"Das Spiel hat mir Spaß gemacht"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 96%;">96% (Stimme sehr zu)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-bar-container">
+                            <div class="result-question">"Die Steuerung war intuitiv"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 92%;">92% (Stimme zu/sehr zu)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-bar-container">
+                            <div class="result-question">"Ich würde das Spiel weiterempfehlen"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 100%;">100% (Stimme sehr zu)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tile" style="padding: 25px;">
+                        <h3 style="color: #4ade80; border-bottom: 1px solid rgba(74, 222, 128, 0.3); padding-bottom: 10px; margin-bottom: 20px; font-size: 18px;">2. Immersion</h3>
+                        
+                        <div class="result-bar-container">
+                            <div class="result-question">"Vollständig im Spiel verloren (Flow)"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 88%;">88% (Stimme sehr zu)</div>
+                            </div>
+                        </div>
+
+                        <div class="result-bar-container">
+                            <div class="result-question">"Wirklich im virtuellen Raum zu sein"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 94%;">94% (Stimme zu/sehr zu)</div>
+                            </div>
+                        </div>
+
+                        <div class="result-bar-container">
+                            <div class="result-question">"Starkes Raumgefühl vermittelt"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 90%;">90% (Stimme sehr zu)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tile" style="padding: 25px;">
+                        <h3 style="color: #4ade80; border-bottom: 1px solid rgba(74, 222, 128, 0.3); padding-bottom: 10px; margin-bottom: 20px; font-size: 18px;">3. VR-Sickness / Komfort</h3>
+                        
+                        <div class="result-bar-container">
+                            <div class="result-question">"Keinerlei VR-bedingte Beschwerden"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 85%;">85% (Stimme sehr zu)</div>
+                            </div>
+                        </div>
+
+                        <div class="result-bar-container">
+                            <div class="result-question">"Mir wurde [...] schwindelig"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 95%;">95% (Stimme gar nicht zu)</div>
+                            </div>
+                        </div>
+
+                        <div class="result-bar-container">
+                            <div class="result-question">"Ich hatte [...] Kopfschmerzen"</div>
+                            <div class="result-bar-bg">
+                                <div class="result-bar-fill-positive" style="width: 100%;">100% (Stimme gar nicht zu)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <h2 class="slide-title">Ausblick</h2>
+            <div class="content-area">
+                <div class="single-column">
+                    <ul style="list-style: none; padding: 0; text-align: left; display: inline-block;">
+                        <li style="margin-bottom: 30px;"><strong style="color: #4ade80; font-size: 24px;">Stamina-System:</strong><br> Einführung einer Ausdauermechanik, um taktisches Greifen und Routenplanung tiefer in den Fokus zu rücken.</li>
+                        <li style="margin-bottom: 30px;"><strong style="color: #4ade80; font-size: 24px;">Item-System:</strong><br> Nutzung von Equipment wie Magnesia oder Greifhaken, um das Movement-Repertoire zu erweitern.</li>
+                        <li style="margin-bottom: 30px;"><strong style="color: #4ade80; font-size: 24px;">Procedurally Generated Terrain:</strong><br> Endlos generierte Kletterwände für maximale Wiederspielbarkeit und stetig neue Herausforderungen.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="title-layout">
+                <h2 style="font-size: 80px; color: #4ade80; margin-bottom: 20px;">Vielen Dank!</h2>
+                <p class="subtitle">Zeit für Fragen & Diskussion</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide-container');
+            const counter = document.getElementById('counter');
+            let currentSlide = 0;
+
+            function updateSlide() {
+                slides.forEach((slide, index) => {
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+                counter.textContent = `${currentSlide + 1} / ${slides.length}`;
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' || e.key === ' ') {
+                    if (currentSlide < slides.length - 1) {
+                        currentSlide++;
+                        updateSlide();
+                    }
+                } else if (e.key === 'ArrowLeft') {
+                    if (currentSlide > 0) {
+                        currentSlide--;
+                        updateSlide();
+                    }
+                }
+            });
+            
+            // Touch Support (Swipe links/rechts)
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            document.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            document.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+            
+            function handleSwipe() {
+                const swipeThreshold = 50;
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    // Swipe Left -> Next Slide
+                    if (currentSlide < slides.length - 1) {
+                        currentSlide++;
+                        updateSlide();
+                    }
+                }
+                if (touchEndX > touchStartX + swipeThreshold) {
+                    // Swipe Right -> Prev Slide
+                    if (currentSlide > 0) {
+                        currentSlide--;
+                        updateSlide();
+                    }
+                }
+            }
+
+            // Initialisiere den Counter
+            updateSlide();
+        });
+    </script>
+</body>
+</html>
