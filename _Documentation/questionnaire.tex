@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[german]{babel}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{titlesec}
+
+\geometry{a4paper, margin=1.6cm, top=1.8cm}
+\setlength{\tabcolsep}{4pt}
+\setlength{\arrayrulewidth}{0.5pt}
+\renewcommand{\arraystretch}{1.75}  % uniform padding above+below → m{} centers correctly
+
+% Column types — m{} centers content vertically within each row
+\newcolumntype{Q}{>{\RaggedRight\arraybackslash}m{10.2cm}}
+\newcolumntype{A}{>{\centering\arraybackslash}m{1.15cm}}
+
+% Checkbox and rotated header commands
+\newcommand{\cb}{{\Large$\square$}}
+\newcommand{\rh}[1]{\rotatebox{90}{\small\textbf{#1}\hspace{0.4em}}}
+
+% Section formatting
+\titleformat{\section}[block]{\large\bfseries}{}{0em}{}[\vspace{-0.5em}]
+\titlespacing*{\section}{0pt}{1.2em}{0.8em}
+
+% Reusable table header
+\newcommand{\tableheader}{%
+  \textbf{Aussage} &
+  \rh{Stimme gar nicht zu} &
+  \rh{Stimme nicht zu} &
+  \rh{Neutral} &
+  \rh{Stimme zu} &
+  \rh{Stimme sehr zu} \\
+  \hline
+}
+
+\begin{document}
+
+% ── Title ────────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries Evaluationsbogen}\\[0.5em]
+  {\small Name: \underline{\hspace{4cm}}\quad
+          Datum: \underline{\hspace{3cm}}}
+\end{center}
+
+\vspace{0.5em}
+{\small\textit{Bitte kreuzen Sie bei jeder Aussage die zutreffende Antwort an.}}
+
+% ── 1. User Experience ───────────────────────────────────────────────────────
+\section*{1. User Experience}
+
+\noindent
+\begin{tabular}{|Q|A|A|A|A|A|}
+\hline
+\tableheader
+Ich würde das Spiel erneut spielen, um meine Bestzeit zu verbessern
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Die Steuerung war intuitiv und leicht zu verstehen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Das Klettern war direkt verständlich ohne lange Erklärung
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Das Spiel war abwechslungsreich (verschiedene Wege / Techniken möglich)
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich würde das Spiel weiterempfehlen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Das Spiel hat mir Spaß gemacht
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich hatte das Gefühl, das Movement gut zu beherrschen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+\end{tabular}
+
+\vspace{1.2em}
+
+% ── 2. Immersion ─────────────────────────────────────────────────────────────
+\section*{2. Immersion}
+
+\noindent
+\begin{tabular}{|Q|A|A|A|A|A|}
+\hline
+\tableheader
+Ich hatte das Gefühl, wirklich im virtuellen Raum zu sein
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich habe mich vollständig im Spiel verloren (Flow / Presence)
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Das Klettern hat ein starkes Raumgefühl vermittelt
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich habe oft vergessen, dass ich in einer realen Umgebung stehe
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Geschwindigkeit und Bewegung haben die Immersion verstärkt
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich hatte das Gefühl, wirklich an einem Berg zu hängen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich hatte Angst runterzufallen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+\end{tabular}
+
+\vspace{1.2em}
+
+% ── 3. VR-Sickness / Komfort ─────────────────────────────────────────────────
+\section*{3. VR-Sickness / Komfort}
+
+\noindent
+\begin{tabular}{|Q|A|A|A|A|A|}
+\hline
+\tableheader
+Ich hatte während des Spielens Kopfschmerzen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Mir wurde während des Spielens schwindelig
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich fühlte mich nach dem Spielen unwohl
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich musste wegen körperlicher Beschwerden eine Pause machen
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich hatte während des Spielens Höhenangst
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+Ich hatte keinerlei VR-bedingte Beschwerden
+  & \cb & \cb & \cb & \cb & \cb \\ \hline
+\end{tabular}
+
+\vspace{0.5em}
+
+% ── Open feedback ─────────────────────────────────────────────────────────────
+\section*{Anmerkungen / Feedback}
+
+\noindent\underline{\hspace{\textwidth}}\\[1.6em]
+\noindent\underline{\hspace{\textwidth}}\\[1.6em]
+\noindent\underline{\hspace{\textwidth}}
+
+\end{document}
