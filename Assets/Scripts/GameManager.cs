@@ -55,5 +55,16 @@ public class GameManager : MonoBehaviour
     public void StopRun()
     {
         running = false;
+        StartCoroutine(FinishRoutine());
+    }
+    IEnumerator FinishRoutine()
+    {
+        countdownText.text =timerText.text;
+
+        yield return new WaitForSecondsRealtime(3f);
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
+        );
     }
 }

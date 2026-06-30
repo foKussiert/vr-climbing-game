@@ -13,19 +13,10 @@ public class FinishDetection : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            triggered = true;
+
             GameManager.Instance.StopRun();
             HighscoreManager.SaveScore(GameManager.Instance.timer);
-            triggered = true;
-            StartCoroutine(LoadLevel(nextSceneName));
-        }
-    }
-
-    private IEnumerator LoadLevel(string sceneName)
-    {
-        AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
-        while (!op.isDone)
-        {
-            yield return null;
         }
     }
 }
