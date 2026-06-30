@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI countdownText;
+    public AudioSource backgroundMusic;
 
     void Awake()
     {
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         timer = 0f;
         running = true;
         canClimb = true;
+        backgroundMusic.Play();
     }
 
     public void StopRun()
@@ -57,14 +59,16 @@ public class GameManager : MonoBehaviour
         running = false;
         StartCoroutine(FinishRoutine());
     }
+
     IEnumerator FinishRoutine()
     {
-        countdownText.text =timerText.text;
+        countdownText.text = timerText.text;
 
         yield return new WaitForSecondsRealtime(3f);
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
         );
+        backgroundMusic.Stop();
     }
 }
