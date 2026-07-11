@@ -1,331 +1,229 @@
-# VR Game Design Document (Unity / Team)
-
-> **Projektname:** ZVIT-Project
-
-> **Teammitglieder:** Tim, Kürsat, Alex, Philipp
-
-> **Status:** Idee / Pre-Production
+# VR Climbing Speedrun Game – Game Design Document
 
 ---
 
-## 1. Projektübersicht
+# 1. Projektübersicht
 
-### 1.1 Elevator Pitch
+## 1.1 Elevator Pitch
 
-ZVIT-Project ist ein VR-Kletterspiel im Singleplayer-Timer-Modus. <br>
-Der Spieler startet eine Kletterstrecke und versucht, die Strecke in möglichst kurzer Zeit zu absolvieren.
-
-- Genre: Jump and Run (VR)
-
-### 1.2 Kernfantasie
-
-- Ich bin ein schneller, taktischer VR-Kletterer.
-- Ich nutze Umgebung, Timing und Items, um meine Zeit zu verbessern.
-
-### 1.3 Zielplattform
-
-- VR-Headsets mit 3 Freiheitsgraden (3DoF)
-- Steuerung über VR-Controller (Hände + Joystick)
+Das Projekt ist ein VR-basiertes Climbing-Spiel, bei dem der Spieler eine vertikale Strecke so schnell wie möglich durchquert. Der Fokus liegt auf physikbasiertem Klettern und einem zeitbasierten Gameplay-Loop.
 
 ---
 
-## 2. High Concept
+## 1.2 Kernfantasie
 
-### 2.1 Kernidee
-
-Der Spieler verbringt den Großteil seiner Zeit mit Klettern, Greifen, Ausweichen und dem klugen Einsatz von Items.
-
-### 2.2 USPs
-
-- Fokus auf direktes VR-Klettern statt klassischem Shooter-Gameplay
-- Kurze, intensive Runs mit hoher Wiederholbarkeit
-- Skill trifft Risiko durch Physik, Ausdauer und Item-Einsatz
-
-### 2.3 Accessibility / Komfort
-
-- Bewegungsoptionen: Smooth Locomotion (Teleport optional als Komfortmodus)
-- Komfortfeatures: Snap Turn, Vignette, einstellbare Drehgeschwindigkeit [TODO]
-- Klettern über Hände (Grip/Festhalten)
+Der Spieler erlebt sich als VR-Kletterer, der durch präzise Handbewegungen eine Strecke effizient bewältigt und seine Zeit optimiert.
 
 ---
 
-## 3. Core Gameplay
+## 1.3 Zielplattform
 
-### 3.1 Core Loop
-
-1. Spieler spawnt am Startpunkt der Strecke.
-2. Der Spieler klettert nach oben, interagiert mit der Umgebung und nutzt Items.
-3. Ziel ist es, die Strecke in möglichst kurzer Zeit zu absolvieren (Timer).
-4. Ergebnisanzeige mit Zeit, dann Neustart oder neues Level.
-
-### 3.2 Success / Failure States
-
-- Erfolg: Level abgeschlossen / Bestzeit verbessert.
-- Misserfolg: Sturz oder Zeitverlust, Weiterspielen ab Checkpoint.
-- Sturzverhalten: Weiterspielen ab Landepunkt oder Checkpoint.
-- Checkpoints: Ja.
-
-### 3.3 Match-Fluss
-
-- Ready-Phase / Start
-- Laufende Runde (Einzelspieler, Timer läuft)
-- End-Screen mit Bestzeit und Timer-Statistiken
+- VR-Headsets (Roomscale / 3DoF)
+- Unity Engine
+- XR Interaction Toolkit
 
 ---
 
-## 4. Game Rules
+# 2. High Concept
 
-### 4.1 Grundregeln
+## 2.1 Kernidee
 
-- Spieler dürfen: Klettern, bewegen, greifen, werfen, Items verwenden.
-- Spieler dürfen nicht: Aus der Map gehen, Exploits nutzen.
-- Zeitdruck: Modusabhängig (z.B. Timer im Singleplayer).
-- Ressourcenlimit: Ausdauer (Stamina).
-
-### 4.2 Interaktionsregeln
-
-- Greifbare Objekte: Kletterkanten, Seile, Lianen, Kletterhaken, Kisten [TODO].
-- Dekorative Objekte: Hintergrund, entfernte Berge/Bäume, nicht markierte Props.
-- Aktivierung: Collider + Grip bzw. Trigger.
-- Physik: Gravitation ist aktiv, Objekte können bewegt/geworfen werden.
-
-### 4.3 Interaktionen
-
-- Interaktionen beziehen sich auf die Umwelt und das eigene Movement; das Design fokussiert Singleplayer-Spielabläufe.
+Der Spieler startet einen Run, klettert durch eine Low-Poly-Umgebung und versucht, das Ziel in möglichst kurzer Zeit zu erreichen. Das Gameplay basiert auf physikalischem Greifen und Gravitation.
 
 ---
 
-## 5. Player
+## 2.2 USPs
 
-### 5.1 Fähigkeiten
-
-- Laufen / Locomotion
-- Greifen / Festhalten
-- Werfen
-- Klettern
-- Spezialfähigkeit über Item
-
-### 5.2 Eingaben / Controls
-
-- Linker Controller: linke Hand
-- Rechter Controller: rechte Hand
-- Grip: Greifen/Festhalten [TODO]
-- Trigger: Nutzen/Werfen [TODO]
-- Joystick: Bewegung
-- Menü-Taste: Pause / Einstellungen [TODO]
-- Gesten: optional [TODO]
-
-### 5.3 Spielerwerte
-
-- Ausdauer (Stamina): [TODO]
-- Inventarslots: [TODO]
-- Bewegungsgeschwindigkeit: [TODO]
-- Gravitationseinfluss: [TODO]
-
-### 5.4 Spieler-Feedback
-
-- Audio: Schnaufen, Fallen, Landen, Treffer
-- Visuell: Treffer-Feedback, Stamina-Status, Fortschritt zum Ziel
-- UI: Item-Slot + Stamina-Anzeige
-- Haptik: Controller-Vibration bei relevanten Aktionen
-
-### 5.5 Spawn-Logik
-
-- Startposition und Checkpoint-Placement für den Spieler.
+- Physikbasiertes VR-Klettern
+- Kurze, wiederholbare Runs
+- Skill-basiertes Movement durch Handinteraktion
+- Direkte VR-Immersion ohne klassische Locomotion
 
 ---
 
-## 6. Items und Inventar
+# 3. Core Gameplay
 
-### 6.1 Item-Liste
+## 3.1 Core Loop
 
-| Name           | Definition                                                | Interaktion                            |
-| -------------- | --------------------------------------------------------- | -------------------------------------- |
-| Energy         | Füllt Ausdauer auf / beschleunigt Regeneration            | Aufheben + Aktivieren                  |
-| Gravity        | Verändert temporär die Gravitation (z. B. langsamer Fall) | Aktivieren mit begrenzter Dauer [TODO] |
-| Biene          | Erzeugt lokale Ablenkung/Partikeleffekt                   | Aufheben + Aktivieren                  |
-| Stein          | Fügt dem Level physikalische Hindernisse hinzu            | Interaktion per Greifen/Werfen [TODO]  |
-| Fels           | Fels von oben (Donkey-Kong-ähnlich)                       | Event-/Triggerbasiert [TODO]           |
-| Grappling Hook | Zieht Spieler an einen Zielpunkt                          | Zielen + Auslösen                      |
-
-### 6.2 Tools
-
-- Stamina-Monitor (z.B. Uhr/HUD)
-
-### 6.3 Verbrauchsitems
-
-- Spezialitem pro Runde oder Pickup-basiert [TODO]
-
-### 6.4 Inventarsystem
-
-- Quick Access für aktives Spezialitem
-- Kleine Slot-Anzahl für VR-Übersichtlichkeit
+1. Spieler startet im Main Menu
+2. Countdown (Ready – Set – Go)
+3. Timer startet
+4. Spieler klettert durch das Level
+5. Ziel wird erreicht
+6. Zeit wird angezeigt
+7. Run wird neu gestartet
 
 ---
 
-## 7. VR-spezifisches Design
+## 3.2 Success State
 
-### 7.1 Interaktionen
-
-- Direct Grab
-- Two-Handed Handling
-- Physikobjekte
-
-### 7.2 Immersion
-
-- Räumlicher Sound (3D-Audio)
-- Glaubwürdige Handpräsenz
-- Klare visuelle Rückmeldungen bei Interaktion
+- Ziel erreicht
+- Zeit wird gestoppt und angezeigt
 
 ---
 
-## 8. Level / World Design
+## 3.3 Match Flow
 
-### 8.1 Weltstruktur
+- Countdown Phase
+- Active Run
+- Finish State
+- Restart Loop
 
-- Grundsätzlich linearer Aufstieg
-- Optionale Mikro-Routen für Risiko/Belohnung
+---
 
-### 8.2 Interaktive Umgebung
+# 4. Game Rules
 
-- Kisten
-- Bäume
-- Felsvorsprünge
-- Spalten
-- Seile
+## 4.1 Grundregeln
+
+- Movement nur durch Klettern
+- Gravitation ist aktiv
+- Ziel ist die schnellste Zeit
+- Keine klassischen Movement-Systeme vorhanden
+
+---
+
+## 4.2 Interaktionen
+
+- Greifen von Oberflächen
+- Physikalisches Ziehen des Körpers
+- Kletterbare Levelgeometrie
+
+---
+
+# 5. Player System
+
+## 5.1 Fähigkeiten
+
+- Greifen und Klettern
+- Physikalisches Movement durch Handpositionen
+- Kontrolle über vertikale Bewegung
+
+---
+
+## 5.2 Input
+
+- Grip Button: Klettern / Festhalten
+- VR Controller: Handtracking
+
+---
+
+## 5.3 Spielerwerte
+
+- Kein Stamina-System implementiert
+- Gravitation aktiv
+- Movement abhängig von Handbewegung
+
+---
+
+## 5.4 Feedback
+
+- Timer UI
+- Countdown UI
+- Finish Anzeige
+- Audio Feedback über Musikstart beim Run
+
+---
+
+# 6. VR Movement System
+
+## 6.1 Climbing System
+
+- Hände greifen Oberflächen
+- Körper bewegt sich entgegengesetzt zur Handbewegung
+- Bewegung basiert auf Hand-Delta
+
+---
+
+## 6.2 Gravity System
+
+- Permanente Gravitation aktiv
+- Spieler fällt ohne Grip
+- Kombination aus Klettern und Fallen möglich
+
+---
+
+## 6.3 Wall Interaction
+
+- Kanten können gelegentlich zu Hängenbleiben führen
+- Kein aktives Push-Off System implementiert
+- Level ist für Klettern optimiert
+
+---
+
+# 7. Level Design
+
+## 7.1 Struktur
+
+- Vertikales Leveldesign
+- Fokus auf Aufstieg
+- Ein klarer Zielpunkt
+
+---
+
+## 7.2 Environment
+
 - Felsen
-- Lianen
-- Kletterhaken
-
-### 8.3 Story Delivery
-
-- Leichter Einstieg über Start-Ansage oder Monitor ("Ready - Set - Go")
+- Plattformen
+- natürliche Kletterstrukturen
 
 ---
 
-## 9. Art Direction
+# 8. UI / UX
 
-### 9.1 Stil
+## 8.1 HUD
 
-- Nature
-- Low Poly
-
-### 9.2 Asset-Liste
-
-- [TODO] Kletter-Assets
-- [TODO] Umwelt-Props
-- [TODO] UI-Elemente
+- Timer (laufend)
+- Countdown (Ready / Set / Go)
+- Finish Text mit Zeit
 
 ---
 
-## 10. Audio Design
+# 9. Audio Design
 
-### 10.1 Sound-Kategorien
-
-- Interaktionssounds
-- Treffer-/Impactsounds
-- Interaktionssounds / Störsounds
-- Ambient Sounds
-- Musik
-
-### 10.2 Audio-Ziele
-
-- Mehr Immersion durch klare Raumwahrnehmung
-- Relevante Gameplay-Events müssen eindeutig hörbar sein
-- 3D-Audio-Priorisierung für wichtige Quellen
-
-### 10.3 Musik
-
-- Ruhiger/chilliger Grundton
-- Dynamik in spannenden Match-Phasen [TODO]
+- Ein Musiktrack startet beim Run Start
+- Musik endet/stoppt beim Finish
 
 ---
 
-## 11. UI / UX
+# 10. Technik
 
-### 11.1 Menüs
+## 10.1 Kernsysteme
 
-- Main Menu
-- Pause Menu
-- Settings
-
-### 11.2 UX-Prinzipien
-
-- Große Buttons
-- Sofortiges Feedback auf jede Interaktion
-- Gute Lesbarkeit und Kontrast in VR
-
----
-
-## 12. Technik
-
-### 12.1 Kernsysteme
-
-- Player Controller
-- Interaction System
-- Inventory System
-- Audio Manager
+- VR Climbing System
+- Gravity System
+- Timer System
 - Scene Management
-
-### 12.2 Singleplayer
-
-- Modus: Singleplayer (Timer-Modus)
-- Spieleranzahl: 1
-
-### 12.3 Technische Fragen
-
-- Benötigen wir Netzwerkcode? Nein, Fokus auf lokalem Singleplayer.
-- Welche Objekte müssen persistent gespeichert werden (Bestzeiten, Einstellungen)?
-- Ownership-Regeln entfallen, da keine netzwerkbasierten Interaktionen geplant sind.
+- Finish Detection
+- UI System
 
 ---
 
-## 13. Entwicklungsphasen
+## 10.2 Architektur
 
-### Phase 1: Vision fixieren
-
-- Vision
-- Zielplattform
-- Core Loop
-- Player
-- Game Rules
-- MVP
-
-### Phase 2: Prototyp bauen
-
-- VR Movement
-- Greifen / Interaktion
-- Timer-basiertes Level und Checkpoints
-- 1 Toolsystem (z.B. Grappling Hook)
-- 1 Testarena
-
-### Phase 3: Erweitern und polieren
-
-- Story
-- UI-Polish
-- Zusätzliche Level
-- Effekte / Audio / Balancing
+- GameManager steuert Spielzustand
+- FinishDetection triggert Run-Ende
+- UI ist an XR Camera gebunden
+- Scoreboard im Main Menu zeigt Bestzeiten
 
 ---
 
-## 14. MVP Scope
+# 11. Game Flow
 
-### Must-have
+ - Start → Countdown → Run → Finish → Time Display → Restart
 
-- Spielbarer Singleplayer-Timer-Prototyp in VR
-- Kletter-Loop mit Start, Ziel und Checkpoints
-- Funktionierende Ausdauer-Logik
-- 2 funktionierende Items
-- Basic UI (Start, Pause, Ergebnis, Bestzeiten-Anzeige)
+---
 
-### Should-have
+# 12. Evaluation
+Das Spiel wurde getestet mit Fokus auf:
 
-- Singleplayer-Timer-Modus
-- Drittes Item zur zusätzlichen Herausforderung
-- Verbesserte Audio-Hinweise
+- Usability (Steuerbarkeit)
+- Immersion (Presence)
+- Motion Comfort
+- Gameplay Flow
 
-### Won't-have (im MVP)
+---
+# 13. Final Statement
 
-- Große Story-Kampagne
-- Mehrere komplett unterschiedliche Maps
-- Komplexe Progression/Crafting-Systeme
+ - Das Projekt ist ein funktionaler VR Climbing Speedrun Prototyp. Alle Kernmechaniken (Movement, Gravity, Timer, Finish Loop und Scoreboard) sind implementiert und ermöglichen ein wiederholbares, zeitbasiertes Spielerlebnis.
+
+---
