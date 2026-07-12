@@ -1,4 +1,4 @@
-# VR Climbing Speedrun Game – Game Design Document
+# Proof by Climbing Game – Game Design Document
 
 ---
 
