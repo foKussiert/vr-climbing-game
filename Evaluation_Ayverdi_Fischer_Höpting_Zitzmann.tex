@@ -118,10 +118,11 @@ Die Bewertung erfolgte auf einer 5-Punkt-Likert-Skala:
 \begin{tikzpicture}
     \begin{axis}[
         evalbar,
-        symbolic y coords={Weiterempfehlung,Steuerung intuitiv,Spa{\ss} am Spiel},
+        height=6.5cm,
+        symbolic y coords={Movement gut beherrscht,Spa{\ss} am Spiel,Weiterempfehlung,Abwechslungsreichtum,Klettern direkt verständlich,Steuerung intuitiv,Erneutes Spielen für Bestzeit},
     ]
     \addplot[fill=accent, draw=none] coordinates {
-        (96,Spa{\ss} am Spiel) (92,Steuerung intuitiv) (100,Weiterempfehlung)
+        (85,Movement gut beherrscht) (96,Spa{\ss} am Spiel) (100,Weiterempfehlung) (82,Abwechslungsreichtum) (89,Klettern direkt verständlich) (92,Steuerung intuitiv) (91,Erneutes Spielen für Bestzeit)
     };
     \end{axis}
 \end{tikzpicture}
@@ -134,10 +135,11 @@ Die User Experience wurde insgesamt sehr positiv bewertet. Besonders die hohe We
 \begin{tikzpicture}
     \begin{axis}[
         evalbar,
-        symbolic y coords={Raumgef\"uhl durch Klettern,Pr\"asenz im virtuellen Raum,Flow / vollst\"andiges Eintauchen},
+        height=6.5cm,
+        symbolic y coords={Angst vor dem Herunterfallen,Gefühl an einem Berg zu hängen,Geschwindigkeit verstärkt Immersion,Vergessen der realen Umgebung,Raumgefühl durch Klettern,Flow / vollständiges Eintauchen,Präsenz im virtuellen Raum},
     ]
     \addplot[fill=accent, draw=none] coordinates {
-        (88,Flow / vollst\"andiges Eintauchen) (94,Pr\"asenz im virtuellen Raum) (90,Raumgef\"uhl durch Klettern)
+        (78,Angst vor dem Herunterfallen) (86,Gefühl an einem Berg zu hängen) (89,Geschwindigkeit verstärkt Immersion) (81,Vergessen der realen Umgebung) (90,Raumgefühl durch Klettern) (88,Flow / vollständiges Eintauchen) (94,Präsenz im virtuellen Raum)
     };
     \end{axis}
 \end{tikzpicture}
@@ -150,10 +152,11 @@ Das Spiel erzeugt ein starkes Immersionsgefühl. Besonders das physikbasierte Kl
 \begin{tikzpicture}
     \begin{axis}[
         evalbar,
-        symbolic y coords={Keine Kopfschmerzen,Kein Schwindel,Keine VR-bedingten Beschwerden},
+        height=5.5cm,
+        symbolic y coords={Höhenangst während des Spielens,Pause wegen körperlicher Beschwerden,Unwohlsein nach dem Spielen,Keine VR-bedingten Beschwerden,Kein Schwindel,Keine Kopfschmerzen},
     ]
     \addplot[fill=accent, draw=none] coordinates {
-        (85,Keine VR-bedingten Beschwerden) (95,Kein Schwindel) (100,Keine Kopfschmerzen)
+        (28,Höhenangst während des Spielens) (4,Pause wegen körperlicher Beschwerden) (6,Unwohlsein nach dem Spielen) (85,Keine VR-bedingten Beschwerden) (95,Kein Schwindel) (100,Keine Kopfschmerzen)
     };
     \end{axis}
 \end{tikzpicture}
