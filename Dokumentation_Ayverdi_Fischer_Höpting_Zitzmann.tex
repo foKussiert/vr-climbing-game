@@ -1,0 +1,253 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{colortbl}
+
+\geometry{a4paper, margin=2.5cm}
+
+\definecolor{accent}{RGB}{40,60,90}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{accent}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{accent}}{\thesubsection}{1em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={Proof by Climbing - Projektdokumentation}
+}
+
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.2em}
+
+\newcommand{\arbeitszeile}[2]{#1 & #2 \\}
+
+\begin{document}
+
+% ---------------- Titelseite ----------------
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge\bfseries\color{accent} Proof by Climbing}\\[0.5em]
+    {\Large Projektdokumentation}\\[2cm]
+
+    {\large Virtual Reality: Konzeption und Anwendung immersiver Technologien}\\[3cm]
+
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabularx}{0.6\textwidth}{X c}
+        \textbf{Person} & \textbf{Anteil} \\
+        \arrayrulecolor{accent!40}\specialrule{0.4pt}{2pt}{4pt}
+        Alexander Zitzmann & 25\,\% \\
+        Kürsat Ayverdi     & 25\,\% \\
+        Philipp Höpting    & 25\,\% \\
+        Tim Fischer        & 25\,\% \\
+    \end{tabularx}
+
+    \vfill
+    {\large \today}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ---------------- 1. Projektbeschreibung ----------------
+\section{Projektbeschreibung}
+
+Das Projekt ist eine VR-Anwendung, bei der der Spieler durch physikbasiertes Klettern eine vertikale Spielwelt durchquert. Ziel ist es, die Strecke so schnell wie möglich zu absolvieren.
+\\
+Der Fokus liegt auf immersivem VR-Gameplay, direkter Handinteraktion und einem einfachen, wiederholbaren Speedrun-Loop.
+
+% ---------------- 2. Vorgehensweise ----------------
+\section{Vorgehensweise / Entwicklung}
+
+Die Entwicklung erfolgte iterativ in mehreren Schritten:
+
+\subsection{Prototyping Phase}
+
+Zuerst wurde ein grundlegendes VR-Setup in Unity erstellt:
+
+\begin{itemize}
+    \item XR Origin Setup
+    \item Handcontroller Integration
+    \item Grundlegende Bewegung im Raum
+\end{itemize}
+
+\subsection{Entwicklung des Klettersystems}
+
+Anschließend wurde das zentrale Gameplay-System entwickelt:
+
+\begin{itemize}
+    \item Klettern über Grip-Input
+    \item Bewegung basiert auf Handpositionsdifferenz: Charakter bewegt sich entgegengesetzt zur Handbewegung
+\end{itemize}
+
+Ziel war es, ein natürliches und physiknahes Bewegungsgefühl zu erzeugen.
+
+\subsection{Game Loop Implementierung}
+
+Danach wurde der komplette Spielablauf aufgebaut:
+
+\begin{itemize}
+    \item Countdown (Ready -- Set -- Go)
+    \item Start des Timers
+    \item Aktivphase (Climbing)
+    \item Zielerkennung über Trigger
+    \item Stop des Timers, Restart der Szene
+\end{itemize}
+
+\subsection{UI Integration}
+
+Zur Verbesserung der Spielerfahrung wurde ein UI-System integriert:
+
+\begin{itemize}
+    \item Timer-Anzeige
+    \item Countdown-Anzeige
+    \item Finish-Anzeige
+    \item Scoreboard im Hauptmenü
+\end{itemize}
+
+\subsection{Audio Integration}
+
+Ein einfacher Audio-Loop wurde implementiert:
+
+\begin{itemize}
+    \item Musik startet beim Run-Start
+    \item Musik läuft während des gesamten Runs
+\end{itemize}
+
+% ---------------- 3. Funktionsweise ----------------
+\section{Funktionsweise des Spiels}
+
+\subsection{Startphase}
+
+Beim Start des Spiels erscheint ein Countdown:
+
+\begin{enumerate}
+    \item ``Ready''
+    \item ``Set''
+    \item ``Go''
+\end{enumerate}
+
+Nach ``Go'' beginnt der Timer und der Spieler kann sich frei bewegen.
+
+\subsection{Gameplay Phase}
+
+Der Spieler bewegt sich durch:
+
+\begin{itemize}
+    \item Greifen von Kletterflächen
+    \item Ziehen des Körpers durch Handbewegung
+    \item Nutzung der Umgebung zur Fortbewegung
+\end{itemize}
+
+Gravitation wirkt permanent und beeinflusst die Bewegung.
+
+\subsection{Zielphase}
+
+Sobald der Spieler das Ziel erreicht:
+
+\begin{itemize}
+    \item Timer wird gestoppt
+    \item Endzeit wird angezeigt
+    \item Spiel bleibt kurz stehen
+\end{itemize}
+
+Danach erfolgt ein automatischer Restart.
+
+% ---------------- 4. Technische Umsetzung ----------------
+\section{Technische Umsetzung}
+
+\subsection{Engine \& Frameworks}
+
+\begin{itemize}
+    \item Unity Engine
+    \item XR Interaction Toolkit
+    \item TextMeshPro für UI
+\end{itemize}
+
+\subsection{Hauptsysteme}
+
+\paragraph{GameManager}
+\begin{itemize}
+    \item Steuert Timer
+    \item Kontrolliert Spielzustände
+    \item Startet und beendet Runs
+\end{itemize}
+
+\paragraph{FinishDetection}
+\begin{itemize}
+    \item Erkennt Zielkontakt über Trigger
+    \item Stoppt den Run
+\end{itemize}
+
+\paragraph{Movement System}
+\begin{itemize}
+    \item VR-Klettern über Controller-Input
+    \item Bewegung basiert auf Handdifferenz
+    \item CharacterController für Physik
+\end{itemize}
+
+\paragraph{Scene Management}
+\begin{itemize}
+    \item Neustart des Spiels nach Finish
+    \item Reset des kompletten Game States
+\end{itemize}
+
+% ---------------- 5. Spielarchitektur ----------------
+\section{Spielarchitektur}
+
+Das Projekt folgt einer klaren Trennung:
+
+\begin{center}
+    \large
+    Input $\rightarrow$ Movement System $\rightarrow$ GameManager $\rightarrow$ UI / State Control $\rightarrow$ Scene Restart
+\end{center}
+
+% ---------------- 6. Entwicklungsprobleme ----------------
+\section{Entwicklungsprobleme}
+
+\subsection{Kantenprobleme}
+
+Spieler konnten teilweise an Geometrie hängen bleiben.
+
+\begin{quote}
+    $\rightarrow$ \textbf{Lösung:} Optimierung der Collider-Struktur
+\end{quote}
+
+\subsection{Bewegungsgefühl}
+
+Feintuning der Klettergeschwindigkeit war notwendig, um ein natürliches Gefühl zu erzeugen.
+
+\subsection{Synchronisation UI / Timer}
+
+Timer und UI mussten zentral über den GameManager synchronisiert werden.
+
+% ---------------- 7. Ergebnis ----------------
+\section{Ergebnis}
+
+Das Endprodukt ist ein funktionaler VR-Speedrun-Kletterprototyp mit:
+
+\begin{itemize}
+    \item stabiler Klettermechanik
+    \item funktionierendem Timer-System
+    \item klarer Spielstruktur
+    \item wiederholbarem Gameplay-Loop
+\end{itemize}
+
+% ---------------- 8. Fazit ----------------
+\section{Fazit}
+
+Das Projekt zeigt die erfolgreiche Umsetzung eines immersiven VR-Klettersystems mit Fokus auf einfache, intuitive Mechaniken und einem klaren Speedrun-Gameplay.
+
+\end{document}

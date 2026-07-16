@@ -1,0 +1,276 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{microtype}
+\microtypesetup{expansion=false}
+\emergencystretch=3em
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=2.5cm}
+
+\definecolor{accent}{RGB}{40,60,90}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{accent}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{accent}}{\thesubsection}{1em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={Proof by Climbing - Game Design Document}
+}
+
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.2em}
+
+\begin{document}
+
+% ---------------- Titelseite ----------------
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge\bfseries\color{accent} Proof by Climbing}\\[0.5em]
+    {\Large Game Design Document}\\[2cm]
+
+    {\large Virtual Reality: Konzeption und Anwendung immersiver Technologien}\\[0.3em]
+
+    \vfill
+    {\large \today}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ---------------- 1. Projektübersicht ----------------
+\section{Projektübersicht}
+
+\subsection{Elevator Pitch}
+
+Das Projekt ist ein VR-basiertes Climbing-Spiel, bei dem der Spieler eine vertikale Strecke so schnell wie möglich durchquert. Der Fokus liegt auf physikbasiertem Klettern und einem zeitbasierten Gameplay-Loop.
+
+\subsection{Kernfantasie}
+
+Der Spieler erlebt sich als VR-Kletterer, der durch präzise Handbewegungen eine Strecke effizient bewältigt und seine Zeit optimiert.
+
+\subsection{Zielplattform}
+
+\begin{itemize}
+    \item VR-Headsets (Roomscale / 3DoF)
+    \item Unity Engine
+    \item XR Interaction Toolkit
+\end{itemize}
+
+% ---------------- 2. High Concept ----------------
+\section{High Concept}
+
+\subsection{Kernidee}
+
+Der Spieler startet einen Run, klettert durch eine Low-Poly-Umgebung und versucht, das Ziel in möglichst kurzer Zeit zu erreichen. Das Gameplay basiert auf physikalischem Greifen und Gravitation.
+
+\subsection{USPs}
+
+\begin{itemize}
+    \item Physikbasiertes VR-Klettern
+    \item Kurze, wiederholbare Runs
+    \item Skill-basiertes Movement durch Handinteraktion
+    \item Direkte VR-Immersion ohne klassische Locomotion
+\end{itemize}
+
+% ---------------- 3. Core Gameplay ----------------
+\section{Core Gameplay}
+
+\subsection{Core Loop}
+
+\begin{enumerate}
+    \item Spieler startet im Main Menu
+    \item Countdown (Ready -- Set -- Go)
+    \item Timer startet
+    \item Spieler klettert durch das Level
+    \item Ziel wird erreicht
+    \item Zeit wird angezeigt
+    \item Run wird neu gestartet
+\end{enumerate}
+
+\subsection{Success State}
+
+Ziel erreicht. Zeit wird gestoppt und angezeigt.
+
+\subsection{Match Flow}
+
+Countdown Phase $\rightarrow$ Active Run $\rightarrow$ Finish State $\rightarrow$ Restart Loop
+
+% ---------------- 4. Game Rules ----------------
+\section{Game Rules}
+
+\subsection{Grundregeln}
+
+\begin{itemize}
+    \item Movement nur durch Klettern
+    \item Gravitation ist aktiv
+    \item Ziel ist die schnellste Zeit
+    \item Keine klassischen Movement-Systeme vorhanden
+\end{itemize}
+
+\subsection{Interaktionen}
+
+\begin{itemize}
+    \item Greifen von Oberflächen
+    \item Physikalisches Ziehen des Körpers
+    \item Kletterbare Levelgeometrie
+\end{itemize}
+
+% ---------------- 5. Player System ----------------
+\section{Player System}
+
+\subsection{Fähigkeiten}
+
+\begin{itemize}
+    \item Greifen und Klettern
+    \item Physikalisches Movement durch Handpositionen
+    \item Kontrolle über vertikale Bewegung
+\end{itemize}
+
+\subsection{Input}
+
+\begin{itemize}
+    \item Grip Button: Klettern / Festhalten
+    \item VR Controller: Handtracking
+\end{itemize}
+
+\subsection{Spielerwerte}
+
+\begin{itemize}
+    \item Kein Stamina-System implementiert
+    \item Gravitation aktiv
+    \item Movement abhängig von Handbewegung
+\end{itemize}
+
+\subsection{Feedback}
+
+\begin{itemize}
+    \item Timer UI
+    \item Countdown UI
+    \item Finish-Anzeige
+    \item Audio Feedback über Musikstart beim Run
+\end{itemize}
+
+% ---------------- 6. VR Movement System ----------------
+\section{VR Movement System}
+
+\subsection{Climbing System}
+
+\begin{itemize}
+    \item Hände greifen Oberflächen
+    \item Körper bewegt sich entgegengesetzt zur Handbewegung
+    \item Bewegung basiert auf Hand-Delta
+\end{itemize}
+
+\subsection{Gravity System}
+
+\begin{itemize}
+    \item Permanente Gravitation aktiv
+    \item Spieler fällt ohne Grip
+    \item Kombination aus Klettern und Fallen möglich
+\end{itemize}
+
+\subsection{Wall Interaction}
+
+\begin{itemize}
+    \item Kanten können gelegentlich zu Hängenbleiben führen
+    \item Kein aktives Push-Off System implementiert
+    \item Level ist für Klettern optimiert
+\end{itemize}
+
+% ---------------- 7. Level Design ----------------
+\section{Level Design}
+
+\subsection{Struktur}
+
+\begin{itemize}
+    \item Vertikales Leveldesign
+    \item Fokus auf Aufstieg
+    \item Ein klarer Zielpunkt
+\end{itemize}
+
+\subsection{Environment}
+
+\begin{itemize}
+    \item Felsen
+    \item Plattformen
+    \item natürliche Kletterstrukturen
+\end{itemize}
+
+% ---------------- 8. UI / UX ----------------
+\section{UI / UX}
+
+\subsection{HUD}
+
+\begin{itemize}
+    \item Timer (laufend)
+    \item Countdown (Ready / Set / Go)
+    \item Finish Text mit Zeit
+\end{itemize}
+
+% ---------------- 9. Audio Design ----------------
+\section{Audio Design}
+
+Ein Musiktrack startet beim Run-Start. Musik endet/stoppt beim Finish.
+
+% ---------------- 10. Technik ----------------
+\section{Technik}
+
+\subsection{Kernsysteme}
+
+\begin{itemize}
+    \item VR Climbing System
+    \item Gravity System
+    \item Timer System
+    \item Scene Management
+    \item Finish Detection
+    \item UI System
+\end{itemize}
+
+\subsection{Architektur}
+
+\begin{itemize}
+    \item GameManager steuert Spielzustand
+    \item FinishDetection triggert Run-Ende
+    \item UI ist an XR Camera gebunden
+    \item Scoreboard im Main Menu zeigt Bestzeiten
+\end{itemize}
+
+% ---------------- 11. Game Flow ----------------
+\section{Game Flow}
+
+\begin{center}
+    \large
+    Start $\rightarrow$ Countdown $\rightarrow$ Run $\rightarrow$ Finish $\rightarrow$ Time Display $\rightarrow$ Restart
+\end{center}
+
+% ---------------- 12. Evaluation ----------------
+\section{Evaluation}
+
+Das Spiel wurde getestet mit Fokus auf:
+
+\begin{itemize}
+    \item Usability (Steuerbarkeit)
+    \item Immersion (Presence)
+    \item Motion Comfort
+    \item Gameplay Flow
+\end{itemize}
+
+% ---------------- 13. Final Statement ----------------
+\section{Final Statement}
+
+Das Projekt ist ein funktionaler Proof by Climbing Prototyp. Alle Kernmechaniken (Movement, Gravity, Timer, Finish Loop und Scoreboard) sind implementiert und ermöglichen ein wiederholbares, zeitbasiertes Spielerlebnis.
+
+\end{document}

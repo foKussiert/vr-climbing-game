@@ -1,0 +1,186 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{microtype}
+\microtypesetup{expansion=false}
+\emergencystretch=3em
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\geometry{a4paper, margin=2.5cm}
+
+\definecolor{accent}{RGB}{40,60,90}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{accent}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{accent}}{\thesubsection}{1em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={Evaluation - Proof by Climbing}
+}
+
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.2em}
+
+% gemeinsame Optionen für die Balkendiagramme
+\pgfplotsset{
+    evalbar/.style={
+        xbar,
+        width=0.72\textwidth,
+        height=4cm,
+        xmin=0, xmax=110,
+        xlabel={Zustimmung in \%},
+        ytick=data,
+        nodes near coords,
+        nodes near coords align={horizontal},
+        every node near coord/.append style={font=\small},
+        bar width=10pt,
+        xmajorgrids,
+        major grid style={gray!25},
+        axis line style={accent},
+        tick label style={font=\small},
+        enlarge y limits=0.3,
+    }
+}
+
+\begin{document}
+
+% ---------------- Titelseite ----------------
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge\bfseries\color{accent} Proof by Climbing}\\[0.5em]
+    {\Large Evaluation}\\[2cm]
+
+    {\large Virtual Reality: Konzeption und Anwendung immersiver Technologien}\\[0.3em]
+
+    \vfill
+    {\large \today}
+\end{titlepage}
+
+% ---------------- 1. Ziel ----------------
+\section{Ziel der Evaluation}
+
+Ziel der Evaluation war es, die VR-Anwendung hinsichtlich folgender Aspekte zu bewerten:
+
+\begin{itemize}
+    \item User Experience (UX)
+    \item Immersion / Präsenz
+    \item VR-Komfort (Motion Sickness)
+    \item Verständlichkeit der Steuerung
+\end{itemize}
+Die Evaluation basiert auf einem standardisierten Fragebogen, der von Testpersonen nach einem vollständigen Playthrough ausgefüllt wurde.
+
+% ---------------- 2. Testaufbau ----------------
+\section{Testaufbau}
+
+Die Testpersonen haben einen kompletten Run im VR-System durchgeführt.
+\\
+Ablauf:
+\begin{enumerate}
+    \item Start des Spiels (Countdown: Ready -- Set -- Go)
+    \item Durchführen eines vollständigen Climbing-Runs
+    \item Erreichen des Ziels
+    \item Ausfüllen des Fragebogens
+\end{enumerate}
+
+% ---------------- 3. Messmethodik ----------------
+\section{Messmethodik}
+
+Die Bewertung erfolgte auf einer 5-Punkt-Likert-Skala:
+
+\begin{itemize}
+    \item Stimme gar nicht zu
+    \item Stimme nicht zu
+    \item Neutral
+    \item Stimme zu
+    \item Stimme sehr zu
+\end{itemize}
+
+% ---------------- 4. Ergebnisse ----------------
+\section{Ergebnisse}
+
+\subsection{User Experience}
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        evalbar,
+        height=6.5cm,
+        symbolic y coords={Movement gut beherrscht,Spa{\ss} am Spiel,Weiterempfehlung,Abwechslungsreichtum,Klettern direkt verständlich,Steuerung intuitiv,Erneutes Spielen für Bestzeit},
+    ]
+    \addplot[fill=accent, draw=none] coordinates {
+        (85,Movement gut beherrscht) (96,Spa{\ss} am Spiel) (100,Weiterempfehlung) (82,Abwechslungsreichtum) (89,Klettern direkt verständlich) (92,Steuerung intuitiv) (91,Erneutes Spielen für Bestzeit)
+    };
+    \end{axis}
+\end{tikzpicture}
+\end{center}
+Die User Experience wurde insgesamt sehr positiv bewertet. Besonders die hohe Weiterempfehlungsrate zeigt eine starke Akzeptanz des Gameplays.
+
+\subsection{Immersion}
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        evalbar,
+        height=6.5cm,
+        symbolic y coords={Angst vor dem Herunterfallen,Gefühl an einem Berg zu hängen,Geschwindigkeit verstärkt Immersion,Vergessen der realen Umgebung,Raumgefühl durch Klettern,Flow / vollständiges Eintauchen,Präsenz im virtuellen Raum},
+    ]
+    \addplot[fill=accent, draw=none] coordinates {
+        (78,Angst vor dem Herunterfallen) (86,Gefühl an einem Berg zu hängen) (89,Geschwindigkeit verstärkt Immersion) (81,Vergessen der realen Umgebung) (90,Raumgefühl durch Klettern) (88,Flow / vollständiges Eintauchen) (94,Präsenz im virtuellen Raum)
+    };
+    \end{axis}
+\end{tikzpicture}
+\end{center}
+Das Spiel erzeugt ein starkes Immersionsgefühl. Besonders das physikbasierte Klettern trägt zur Präsenz im virtuellen Raum bei.
+
+\subsection{VR-Komfort (Sickness)}
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        evalbar,
+        height=5.5cm,
+        symbolic y coords={Höhenangst während des Spielens,Pause wegen körperlicher Beschwerden,Unwohlsein nach dem Spielen,Keine VR-bedingten Beschwerden,Kein Schwindel,Keine Kopfschmerzen},
+    ]
+    \addplot[fill=accent, draw=none] coordinates {
+        (28,Höhenangst während des Spielens) (4,Pause wegen körperlicher Beschwerden) (6,Unwohlsein nach dem Spielen) (85,Keine VR-bedingten Beschwerden) (95,Kein Schwindel) (100,Keine Kopfschmerzen)
+    };
+    \end{axis}
+\end{tikzpicture}
+\end{center}
+Die VR-Anwendung ist sehr komfortabel nutzbar. Es wurden kaum Symptome von Motion Sickness festgestellt.
+
+% ---------------- 5. Gesamtinterpretation ----------------
+\section{Gesamtinterpretation}
+
+Die Evaluation zeigt insgesamt eine sehr positive Wahrnehmung der Anwendung.
+\\
+Die Kombination aus physikbasiertem Klettern und minimalistischem VR-Design führt zu:
+
+\begin{itemize}
+    \item hoher Immersion
+    \item guter Steuerbarkeit
+    \item geringem VR-Unwohlsein
+\end{itemize}
+
+% ---------------- 6. Fazit ----------------
+\section{Fazit}
+
+Die VR-Anwendung erfüllt die Anforderungen eines immersiven und funktionalen Speedrun-Kletterprototyps.
+\\
+Die Testergebnisse bestätigen, dass das Gameplay sowohl verständlich als auch motivierend ist.
+
+\end{document}
